@@ -107,7 +107,7 @@ long double calculaTarifa(vector<Node> &rota, int indicePassageiro, int indiceRo
     return total;
 }
 
-long double fObj(){
+long double fObj(vector<Node> &rota){
     
     /*Heuristica de Carregamento*/
     bool valido = false;
@@ -188,7 +188,7 @@ long double fObj(){
         cout << passageiros[i].first << " ";
     }cout << endl;
 
-    return total;
+    return total + adj[0][rota.back().cidade]; //Somando o custo de volta para a cidade inicial
 }
 
 int main(){
