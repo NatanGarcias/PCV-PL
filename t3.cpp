@@ -188,7 +188,7 @@ long double fObj(vector<Node> &rota){
         cout << passageiros[i].first << " ";
     }cout << endl;
 
-    return total + adj[0][rota.back().cidade]; //Somando o custo de volta para a cidade inicial
+    return total + adj[0][rota.back().cidade].dist; //Somando o custo de volta para a cidade inicial
 }
 
 int main(){
@@ -196,8 +196,10 @@ int main(){
     
     leitura();
 
-    AntColony();
-    RKGA();
-    GRASP+VND();
-    Exata();
+    fObj(rota);
+
+    // AntColony();
+    // RKGA();
+    // GRASP+VND();
+    // Exata();
 }
