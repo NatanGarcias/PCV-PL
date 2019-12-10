@@ -22,6 +22,7 @@ struct Passageiro{
 };
 
 struct Node{
+    bool operator<(const Node &other) const{ return cidade < other.cidade;}
     int cidade; 
     int numP;
 };
@@ -52,7 +53,7 @@ void leitura(){
         long double desc;
         int u, v;
         cin >> desc >> u >> v;
-        adj[u][v].desc = desc;
+        adj[u][v].desc = adj[v][u].desc = desc;
     }
 
     /*Le as distancias do vertices*/
@@ -75,7 +76,7 @@ bool tarifaMinima(vector<Node> &rota, vector<bool> &marcado, int indiceRota, int
         int cidadeProxima = rota[i + 1].cidade;
         
         total += adj[cidadeAtual][cidadeProxima].dist;
-        total -= adj[cidadeAtual][cidadeProxima].dist * (1.0 - adj[cidadeAtual][cidadeProxima].desc);
+        total -= adj[cidadeAtual][cidadeProxima].dist * adj[cidadeAtual][cidadeProxima].desc;
     }
 
     total /= C + 1;
@@ -99,7 +100,7 @@ long double calculaTarifa(vector<Node> &rota, int indicePassageiro, int indiceRo
         
         long double atual = adj[cidadeAtual][cidadeProxima].dist;
         if(rota[i].numP == C)
-            atual -= adj[cidadeAtual][cidadeProxima].dist * (1.0 - adj[cidadeAtual][cidadeProxima].desc);
+            atual -= adj[cidadeAtual][cidadeProxima].dist * adj[cidadeAtual][cidadeProxima].desc;
     
         total += atual/(rota[i].numP + 1);
     }
@@ -135,13 +136,13 @@ long double fObj(vector<Node> &rota){
             numPassageiros -= desce[cidade];
         
             /*Aloca passageiros, obs.: indice do passageiro = indice da cidade*/
-            if(numPassageiros + 1 <= C && !visitado[vp[cidade].chegada] && !marcado[cidade] && tarifaMinima(rota, marcado, i, cidade)){
+            if(numPassageiros + 1 < C && !visitado[vp[cidade].chegada] && !marcado[cidade] && tarifaMinima(rota, marcado, i, cidade)){
                 numPassageiros++;
-                rota[i].numP = numPassageiros;
                 passageiros.push_back(make_pair(cidade, i));
                 desce[vp[cidade].chegada]++;
             }
 
+            rota[i].numP = numPassageiros;
             visitado[cidade] = true;
         }
 
@@ -152,18 +153,19 @@ long double fObj(vector<Node> &rota){
 
         for(int i = 0; i < passageiros.size(); i++){
             long double tarifaTotal = calculaTarifa(rota, passageiros[i].first, passageiros[i].second);
+            //cerr << "T: " << passageiros[i].first << " " << tarifaTotal << endl;
             if(maiorExcesso < tarifaTotal - vp[passageiros[i].first].tarifaMax){
                 maiorExcesso = tarifaTotal - vp[passageiros[i].first].tarifaMax;
                 maiorPassageiro = passageiros[i].first;
             }
         }
 
-        for(int i=0;i<passageiros.size();i++){
-            cout << passageiros[i].first << " ";
-        }cout << endl;
+        // for(int i=0;i<passageiros.size();i++){
+        //     cout << passageiros[i].first << " ";
+        // }cout << endl;
 
         if(maiorPassageiro != -1){
-            cout << maiorPassageiro << endl;
+            //cout << maiorPassageiro << endl;
             marcado[maiorPassageiro] = true;
         }
         else
@@ -179,14 +181,25 @@ long double fObj(vector<Node> &rota){
         
         long double atual = adj[cidadeAtual][cidadeProxima].dist;
         if(rota[i].numP == C)
-            atual -= adj[cidadeAtual][cidadeProxima].dist * (1.0 - adj[cidadeAtual][cidadeProxima].desc);
+            atual -= adj[cidadeAtual][cidadeProxima].dist * adj[cidadeAtual][cidadeProxima].desc;
     
         total += atual/(rota[i].numP + 1);
+
+        //cout << cidadeAtual << " " << cidadeProxima << " " << adj[cidadeAtual][cidadeProxima].dist << " " << adj[cidadeAtual][cidadeProxima].dist/(rota[i].numP + 1) << " " << total << endl;
+
     }
 
-    for(int i=0;i<passageiros.size();i++){
-        cout << passageiros[i].first << " ";
-    }cout << endl;
+    // for(int i=0;i<rota.size();i++){
+    //     cout << rota[i].cidade << " ";
+    // }cout << endl;
+
+    // for(int i=0;i<rota.size();i++){
+    //     cout << rota[i].numP << " ";
+    // }cout << endl;
+
+    // for(int i=0;i<passageiros.size();i++){
+    //     cout << passageiros[i].first << " ";
+    // }cout << endl;
 
     return total + adj[0][rota.back().cidade].dist; //Somando o custo de volta para a cidade inicial
 }
@@ -196,7 +209,31 @@ int main(){
     
     leitura();
 
-    fObj(rota);
+//     rota[1].cidade = 4;
+//     rota[2].cidade = 6;
+//     rota[3].cidade = 8;
+//     rota[4].cidade = 5;
+//     rota[5].cidade = 1;
+//     rota[6].cidade = 9;
+//     rota[7].cidade = 3;
+//     rota[8].cidade = 2;
+//     rota[9].cidade = 7;
+
+//    cout << fObj(rota) << endl;
+
+    priority_queue<pair<long double, vector<Node>>>pq;
+
+    do{
+        auto f = fObj(rota);
+        pq.push(make_pair(-f, rota));
+    }while(next_permutation(rota.begin() + 1, rota.end()));
+    
+    while(!pq.empty()){
+        cout << -pq.top().first << endl;
+        for(auto i:pq.top().second) cout << i.cidade << " ";
+        cout << endl << endl;
+        pq.pop();
+    }
 
     // AntColony();
     // RKGA();
