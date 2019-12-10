@@ -16,8 +16,8 @@ struct Arco{
 struct Passageiro{
     Passageiro() : tarifaMax(0), chegada(-1), saida(-1), recebeuCarona(false){}
     long double tarifaMax;
-    int chegada;
     int saida;
+    int chegada;
     bool recebeuCarona;
 };
 
@@ -36,10 +36,14 @@ void leitura(){
     cin >> nV >> nP >> C >> Q;
     
     adj.resize(nV);
+    
     for(int i = 0; i < nV; i++) 
         adj[i].resize(nV);
+    
     vp.resize(nP);
+    
     rota.resize(nV);
+    
     for(int i = 0; i < rota.size(); i++)
         rota[i] = {i, 0};
 
@@ -58,7 +62,7 @@ void leitura(){
 
     /*Le os passageiros*/
     for(int i = 0; i < nP; i++)
-        cin >> vp[i].tarifaMax >> vp[i].chegada >> vp[i].saida;
+        cin >> vp[i].tarifaMax >> vp[i].saida >> vp[i].chegada;
 }
 
 bool tarifaMinima(vector<Node> &rota, vector<bool> &marcado, int indiceRota, int indicePassageiro){
@@ -77,7 +81,7 @@ bool tarifaMinima(vector<Node> &rota, vector<bool> &marcado, int indiceRota, int
     total /= C + 1;
 
     if(total > vp[indicePassageiro].tarifaMax){
-        marcado[i] = true;
+        marcado[indicePassageiro] = true;
         return false;
     }
     
@@ -90,8 +94,6 @@ long double calculaTarifa(vector<Node> &rota, int indicePassageiro, int indiceRo
     
     for(int i = indiceRota; rota[i].cidade != vp[indicePassageiro].chegada; i++){
         
-        long double atual = 0.0;
-
         int cidadeAtual = rota[i].cidade;
         int cidadeProxima = rota[i + 1].cidade;
         
@@ -115,9 +117,14 @@ long double fObj(){
     while(!valido){
         
         int numPassageiros = 0;
+        
         vector<bool> visitado(nV, false);
         vector<int> desce(nP, 0);
+        
         passageiros.clear();
+
+        for(int i=0;i<rota.size();i++)
+            rota[i].numP = 0;
 
         /*Alocando passageiros*/
         for(int i = 0; i < rota.size(); i++){
@@ -126,15 +133,16 @@ long double fObj(){
 
             /*Desaloca passageiros*/
             numPassageiros -= desce[cidade];
-            desce[cidade] = 0;
-
-            /*Aloca passageiros*/
+        
+            /*Aloca passageiros, obs.: indice do passageiro = indice da cidade*/
             if(numPassageiros + 1 <= C && !visitado[vp[cidade].chegada] && !marcado[cidade] && tarifaMinima(rota, marcado, i, cidade)){
                 numPassageiros++;
                 rota[i].numP = numPassageiros;
                 passageiros.push_back(make_pair(cidade, i));
-                desce[vp[i].chegada]++;
+                desce[vp[cidade].chegada]++;
             }
+
+            visitado[cidade] = true;
         }
 
         vector<long double>tarifas(nP, 0.0);
@@ -143,15 +151,21 @@ long double fObj(){
         int maiorPassageiro = -1;
 
         for(int i = 0; i < passageiros.size(); i++){
-            long double tarifaTotal = calculaTarifa(rota, passageiros[i].first, passageiro[i].second);
-            if(maiorExcesso < tarifaTotal - vp[passageiros[i]].tarifaMax){
-                maiorExcesso = tarifaTotal - vp[passageiros[i]].tarifaMax;
-                maiorPassageiro = passageiros[i];
+            long double tarifaTotal = calculaTarifa(rota, passageiros[i].first, passageiros[i].second);
+            if(maiorExcesso < tarifaTotal - vp[passageiros[i].first].tarifaMax){
+                maiorExcesso = tarifaTotal - vp[passageiros[i].first].tarifaMax;
+                maiorPassageiro = passageiros[i].first;
             }
         }
 
-        if(maiorPassageiro != -1)
+        for(int i=0;i<passageiros.size();i++){
+            cout << passageiros[i].first << " ";
+        }cout << endl;
+
+        if(maiorPassageiro != -1){
+            cout << maiorPassageiro << endl;
             marcado[maiorPassageiro] = true;
+        }
         else
             valido = true;
     }
@@ -170,10 +184,20 @@ long double fObj(){
         total += atual/(rota[i].numP + 1);
     }
 
+    for(int i=0;i<passageiros.size();i++){
+        cout << passageiros[i].first << " ";
+    }cout << endl;
+
     return total;
 }
 
 int main(){
     srand(time(0));  
+    
     leitura();
+
+    AntColony();
+    RKGA();
+    GRASP+VND();
+    Exata();
 }
