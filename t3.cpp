@@ -545,11 +545,8 @@ int main(){
     
     leitura();
 
-<<<<<<< HEAD
     //GRASP_One();
     BRKGA(100000, 0.2, 0.1, 100);
-=======
     GRASP_One();
     //RKGA(1000, 0.2, 0.1, 100, true);
->>>>>>> feb9c1d84e3cb14821e21b5e78d61914e5b19f75
 }
