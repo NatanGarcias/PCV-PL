@@ -31,6 +31,10 @@ vector<Node>rota; //Rota utilizada na solucao
 vector<vector<Arco>> adj; //Matriz de adjacencia das cidades
 vector<Passageiro> vp; //Vetor de passageiros
 
+void tempoGasto(clock_t &t){
+	printf ("It took me %d clicks (%f seconds).\n",t,((float)t)/CLOCKS_PER_SEC);
+}
+
 void leitura(){
     
     //Le os dados iniciais do problema
@@ -204,39 +208,78 @@ long double fObj(vector<Node> &rota){
     return total + adj[0][rota.back().cidade].dist; //Somando o custo de volta para a cidade inicial
 }
 
+void GRASP_One(){
+	//Minimiza a distancia entre os vertices 
+	int nIteracoes = nV * 1000;
+	int tlC = floor(log2(nV));
+
+	//Calcular o tempo em milisegundos
+	clock_t t;
+  	t = clock();
+ 	
+ 	vector<Node> rotaG;
+
+	long double bestFObj = std::numeric_limits<long double>::max();
+
+	while(nIteracoes--){
+
+		vector<Node> rota;
+		vector<int> visited(nV,false);
+
+		rota.push_back({0,0});
+		visited[0] = true;
+
+		for(int k=0;k<nV-1;k++){
+			
+			int bestV = -1;
+			int bestD;
+
+			int j = rota[rota.size()-1].cidade;
+			
+			priority_queue<pair<int,int>> lC; //lista Candidata
+		
+			for(int i=0;i<nP;i++){
+				if(!visited[i]){
+						bestD = adj[i][j].dist - (1.0 * adj[i][j].desc);
+						lC.push({-bestD,i});
+				}
+			}
+
+			int lC_tam = lC.size();
+			int tamanhoListaCandidata = min(tlC,lC_tam);
+
+			int random = rand()% tamanhoListaCandidata;
+
+			while(random--){
+				lC.pop();
+			}
+
+			bestV = lC.top().second; 
+
+			rota.push_back({bestV,0});
+			visited[bestV] = true;
+		}
+
+		long double atualFObj = fObj(rota);
+			
+		if(atualFObj < bestFObj){
+			rotaG = rota;
+			bestFObj = atualFObj; 
+		}
+	}
+	cout << "Melhor valor da funcao Objetivo: " << bestFObj << endl;
+	for(auto i : rotaG) cout << i.cidade << " ";
+	cout << endl;
+	
+	//Tempo
+	t = clock() - t;
+	tempoGasto(t);
+}
+
 int main(){
     srand(time(0));  
     
     leitura();
 
-//     rota[1].cidade = 4;
-//     rota[2].cidade = 6;
-//     rota[3].cidade = 8;
-//     rota[4].cidade = 5;
-//     rota[5].cidade = 1;
-//     rota[6].cidade = 9;
-//     rota[7].cidade = 3;
-//     rota[8].cidade = 2;
-//     rota[9].cidade = 7;
-
-//    cout << fObj(rota) << endl;
-
-    priority_queue<pair<long double, vector<Node>>>pq;
-
-    do{
-        auto f = fObj(rota);
-        pq.push(make_pair(-f, rota));
-    }while(next_permutation(rota.begin() + 1, rota.end()));
-    
-    while(!pq.empty()){
-        cout << -pq.top().first << endl;
-        for(auto i:pq.top().second) cout << i.cidade << " ";
-        cout << endl << endl;
-        pq.pop();
-    }
-
-    // AntColony();
-    // RKGA();
-    // GRASP+VND();
-    // Exata();
+    GRASP_One();
 }
