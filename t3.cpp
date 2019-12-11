@@ -346,10 +346,14 @@ void RKGA(int popTam, long double pElite, long double pMut, int numIter, bool el
     int numMutantes = popTam * pMut;
     int numNormais = popTam - (numElite + numMutantes);
 
-    while(numIter--){
+    int semMelhora = 0;
+
+    while(semMelhora < numIter){
 
         /*Guarda os indices do membros elite*/
         vector<pair<long double, int>> elite;
+
+        semMelhora++;
 
         /*Avalia os individuos e constroi o conjunto elite*/
         for(int i = 0; i < popTam; i++){
@@ -369,7 +373,7 @@ void RKGA(int popTam, long double pElite, long double pMut, int numIter, bool el
             if(fitness < melhorFitness){
                 melhorFitness = fitness;
                 melhorInd = pop[i];
-                numIter++; //Houve melhora na iteração
+                semMelhora = 0; //Houve melhora na iteração
             }
         }
 
@@ -420,5 +424,5 @@ int main(){
     leitura();
 
     //GRASP_One();
-    RKGA(1000, 0.2, 0.1, 100, true);
+    BRKGA(100000, 0.2, 0.1, 100);
 }
