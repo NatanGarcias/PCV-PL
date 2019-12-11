@@ -210,6 +210,7 @@ long double fObj(vector<Node> &rota){
 
 void GRASP_One(){
 	//Minimiza a distancia entre os vertices 
+	
 	int nIteracoes = nV * 1000;
 	int tlC = floor(log2(nV));
 
@@ -217,6 +218,7 @@ void GRASP_One(){
 	clock_t t;
   	t = clock();
  	
+ 	//Guarda a melhor rota até então encontrada
  	vector<Node> rotaG;
 
 	long double bestFObj = std::numeric_limits<long double>::max();
@@ -229,7 +231,7 @@ void GRASP_One(){
 		rota.push_back({0,0});
 		visited[0] = true;
 
-		for(int k=0;k<nV-1;k++){
+		for(int k=0;k<nV-1;k++){ //Enquanto não tenho todas as cidades na rota
 			
 			int bestV = -1;
 			int bestD;
@@ -239,15 +241,20 @@ void GRASP_One(){
 			priority_queue<pair<int,int>> lC; //lista Candidata
 		
 			for(int i=0;i<nP;i++){
-				if(!visited[i]){
+				// Adiciono quem não foi visitado ainda a uma lista candidata que é feita por uma priority_queue
+				// Salvo os valores negativos para pegar os que tem a menor distância	
+				if(!visited[i]){ 
 						bestD = adj[i][j].dist - (1.0 * adj[i][j].desc);
 						lC.push({-bestD,i});
 				}
 			}
 
+			//Defino o tamanho da lista candidata sendo o minimo entre um valor pré-definido para ela e a quantidade
+			// de vertices que ainda não foram visitados
 			int lC_tam = lC.size();
 			int tamanhoListaCandidata = min(tlC,lC_tam);
 
+			//Escolho o enesimo melhor vertice para ir tal que n é menor que o tamanho da lista candidata
 			int random = rand()% tamanhoListaCandidata;
 
 			while(random--){
@@ -256,10 +263,12 @@ void GRASP_One(){
 
 			bestV = lC.top().second; 
 
+			//Adiciono o vertice escolhido na rota
 			rota.push_back({bestV,0});
 			visited[bestV] = true;
 		}
 
+		//Verifico se encontrei uma solucao melhor que as que eu já vi antes
 		long double atualFObj = fObj(rota);
 			
 		if(atualFObj < bestFObj){
@@ -267,11 +276,13 @@ void GRASP_One(){
 			bestFObj = atualFObj; 
 		}
 	}
+
+	//Imprimo a melhor solucao
 	cout << "Melhor valor da funcao Objetivo: " << bestFObj << endl;
 	for(auto i : rotaG) cout << i.cidade << " ";
 	cout << endl;
 	
-	//Tempo
+	//Imprimo o tempo
 	t = clock() - t;
 	tempoGasto(t);
 }
@@ -412,7 +423,82 @@ void RKGA(int popTam, long double pElite, long double pMut, int numIter, bool el
 	tempoGasto(t);
 }
 
+//Inicializa a mtriz de pheromone de maneira aleatória
+void inicializePheromone( vector<vector<long double>> &pheromone){
+     for(int i = 0; i < nV; i++)
+            for(int j = 0; j < nV; j++)
+                pheromone[i][j] = fRand(0, 1);
+                
+}
 
+void AntColony(){
+	//Matriz de pheromone
+	vector<vector<long double> pheromone(nV,vector<long double> (nV,0.0));
+
+	//Melhor rota encontrada
+	vector<vector<Node>> rotaG;
+
+	//Melhor valor de funcao obj e melhor atual
+	long double bestFObj = numeric_limits<long double> max();
+	long double atualFObj;
+
+	//Parametros para decidir o proximo vertice a ser escolhido
+	//Alfa regula a influencia do pheromone
+	//Beta regula a influencia da distancia
+	//P regula a reduca do pheromone
+	long double alfa = 1;
+	long double beta = 1;
+	long double p = 0.75;
+	
+	//Enquanto a melhor solucao encontrada melhora em pelo menos 50 unidades
+	while(bestFObj - atualFObj > 50){
+
+		//Cada vector seria equivalente a uma formiga
+		vector<vector<Node>> rotas(nV);
+
+		for(int i=0;i<nV;i++){ // Rotas sempre começam no 0
+			rotas[i].push_back({0,0});
+			rotas[i][0] = true;
+		}
+
+		for(int i=0;i<nV;i++){ //Para cada formiga
+			
+			//Vetor de visitados 
+			vector<bool> visited(nV,false);
+			visited[0] = true;
+
+			for(int j=0;j<nV-1;j++){ //Para cada passo
+
+				int bestV = -1;
+				long double bestP = -1;
+
+				int vS = rotas[i][ rota[i][j].size() ];
+
+				for(int k=0;k<nV;k++){ //Para cada cidade que posso chegar
+					if(!visited[k]){	
+
+						long double distancia = adj[vS][k].dist * (1.0 - adj[vS][k].desc);
+
+						long double numerador = powl(pheromone[vS][k],alfa) * powl( (1.0/distancia),beta);
+
+						long double denominador = 0.0;
+
+						for(int l=0;l<nV;l++){ // Para cada cidade que ainda não foi visitada
+							if(!visited[l] && k!=l){
+								long double distancia = adj[vS][l].dist * (1.0 - adj[vS][l].desc);
+
+								denominador+= powl(pheromone[vS][l],alfa) * powl( (1.0/distancia),beta);
+							}
+						}
+					}
+				}
+
+			//Tenho q terminar esse codigo
+
+			}
+		}
+	}
+}
 
 int main(){
     srand(time(0));  
