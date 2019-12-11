@@ -208,10 +208,46 @@ long double fObj(vector<Node> &rota){
     return total + adj[0][rota.back().cidade].dist; //Somando o custo de volta para a cidade inicial
 }
 
+bool pertuba(vector<Node> &rota){
+
+	long double bestFObj = fObj(rota);
+	bool melhor = false;
+	
+	vector<Node> rotaG;
+
+	//Troco o vertice i com o vertice i+1
+	//Se acho quma solucao melhor retorno esse solucao
+	for(int i=0;i<nV-1;i++){
+		swap(rota[i],rota[i+1]);
+
+		long double atualFObj = fObj(rota);
+		if(atualFObj < bestFObj){
+			rotaG = rota;
+			bestFObj = atualFObj;
+			melhor = true;
+		}
+
+		swap(rota[i],rota[i+1]);		
+	}
+
+	if(melhor){
+		cout << bestFObj << endl;
+		rota = rotaG;
+		return true;
+	}
+
+	return false;
+}
+
+void BL_GRASP(vector<Node> &rota){
+	//Enquanto acho uma solução melhor 
+	while(pertuba(rota));
+}
+
 void GRASP_One(){
 	//Minimiza a distancia entre os vertices 
 	
-	int nIteracoes = nV * 1000;
+	int nIteracoes = nV*100;
 	int tlC = floor(log2(nV));
 
 	//Calcular o tempo em milisegundos
@@ -267,6 +303,11 @@ void GRASP_One(){
 			rota.push_back({bestV,0});
 			visited[bestV] = true;
 		}
+
+		//Faço uma busca local na solução
+		cout << "Valor da fobj antes: " <<fObj(rota) << endl;
+		BL_GRASP(rota);
+		cout << "Valor da fobj depois: " <<fObj(rota) << "\n\n";
 
 		//Verifico se encontrei uma solucao melhor que as que eu já vi antes
 		long double atualFObj = fObj(rota);
@@ -427,19 +468,18 @@ void RKGA(int popTam, long double pElite, long double pMut, int numIter, bool el
 void inicializePheromone( vector<vector<long double>> &pheromone){
      for(int i = 0; i < nV; i++)
             for(int j = 0; j < nV; j++)
-                pheromone[i][j] = fRand(0, 1);
-                
+                pheromone[i][j] = fRand(0, 1);              
 }
 
 void AntColony(){
 	//Matriz de pheromone
-	vector<vector<long double> pheromone(nV,vector<long double> (nV,0.0));
+	vector<vector<long double>> pheromone(nV,vector<long double>(nV,0.0) );
 
 	//Melhor rota encontrada
 	vector<vector<Node>> rotaG;
 
 	//Melhor valor de funcao obj e melhor atual
-	long double bestFObj = numeric_limits<long double> max();
+	long double bestFObj = numeric_limits<long double>::max();
 	long double atualFObj;
 
 	//Parametros para decidir o proximo vertice a ser escolhido
@@ -458,7 +498,6 @@ void AntColony(){
 
 		for(int i=0;i<nV;i++){ // Rotas sempre começam no 0
 			rotas[i].push_back({0,0});
-			rotas[i][0] = true;
 		}
 
 		for(int i=0;i<nV;i++){ //Para cada formiga
@@ -472,7 +511,7 @@ void AntColony(){
 				int bestV = -1;
 				long double bestP = -1;
 
-				int vS = rotas[i][ rota[i][j].size() ];
+				int vS = rotas[ rotas[i].size()-1 ][j].cidade;
 
 				for(int k=0;k<nV;k++){ //Para cada cidade que posso chegar
 					if(!visited[k]){	
@@ -505,6 +544,6 @@ int main(){
     
     leitura();
 
-    //GRASP_One();
-    RKGA(1000, 0.2, 0.1, 100, true);
+    GRASP_One();
+    //RKGA(1000, 0.2, 0.1, 100, true);
 }
