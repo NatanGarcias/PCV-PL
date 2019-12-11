@@ -231,7 +231,6 @@ bool pertuba(vector<Node> &rota){
 	}
 
 	if(melhor){
-		cout << bestFObj << endl;
 		rota = rotaG;
 		return true;
 	}
@@ -305,10 +304,8 @@ void GRASP_One(){
 		}
 
 		//Faço uma busca local na solução
-		cout << "Valor da fobj antes: " <<fObj(rota) << endl;
 		BL_GRASP(rota);
-		cout << "Valor da fobj depois: " <<fObj(rota) << "\n\n";
-
+		
 		//Verifico se encontrei uma solucao melhor que as que eu já vi antes
 		long double atualFObj = fObj(rota);
 			
