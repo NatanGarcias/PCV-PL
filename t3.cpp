@@ -357,20 +357,18 @@ long double decoder(vector<long double> &ind){
     return fObj(rota); //Retorna o resultado da função objetivo
 }
 
-void crossover(vector<long double> &pai1, vector<long double> &pai2, vector<long double> &filho){
+void crossover(vector<long double> &paiE, vector<long double> &paiN, vector<long double> &filho){
     for(int i = 0; i < filho.size(); i++){
-        int op = rand() % 2; //Opcao de recombinacao do gene
+        int op = rand() % 100; //Opcao de recombinacao do gene
         
-        if(op == 0)
-            filho[i] = pai1[i];
-        else if(op == 0)
-            filho[i] = pai2[i];
+        if(op < 75)
+            filho[i] = paiE[i];
         else
-            filho[i] = (pai1[i] + pai2[i])/2;
+            filho[i] = paiN[i];
     }
 }
 
-void RKGA(int popTam, long double pElite, long double pMut, int numIter, bool elitista = false){
+void BRKGA(int popTam, long double pElite, long double pMut, int numIter, bool elitista = false){
     
 	//Calcular o tempo em milisegundos
 	clock_t t;
@@ -382,6 +380,9 @@ void RKGA(int popTam, long double pElite, long double pMut, int numIter, bool el
     /*Populacao que ira substituir a antiga (esta fora do while para nao ficar 
     alocando e desalocando sem necessidade)*/
     vector<vector<long double>>popNova(popTam, vector<long double>(nV - 1));
+
+    /*Guarda os indices do individuos por ordem de fitness*/
+    vector<pair<long double, int>> indices(popTam);
     
     /*Melhor solucao encontrada*/
     vector<long double> melhorInd;
@@ -399,24 +400,13 @@ void RKGA(int popTam, long double pElite, long double pMut, int numIter, bool el
 
     while(semMelhora < numIter){
 
-        /*Guarda os indices do membros elite*/
-        vector<pair<long double, int>> elite;
-
         semMelhora++;
 
         /*Avalia os individuos e constroi o conjunto elite*/
         for(int i = 0; i < popTam; i++){
             long double fitness = decoder(pop[i]);
             
-            //Insere no conjunto elite
-            elite.push_back(make_pair(fitness, i));
-            push_heap(elite.begin(), elite.end());
-
-            /*Se o conjunto elite está cheio, remove o pior*/
-            if(elite.size() > numElite){
-                pop_heap(elite.begin(), elite.end());
-                elite.pop_back();
-            }
+            indices[i] = make_pair(fitness, i);
 
             /*Atualiza o melhor individuo*/
             if(fitness < melhorFitness){
@@ -426,29 +416,24 @@ void RKGA(int popTam, long double pElite, long double pMut, int numIter, bool el
             }
         }
 
+        sort(indices.begin(), indices.end());
+
         /*Faz o crossover das solucoes de maneira elitista ou nao,
         depende do parametro utilizado*/
         for(int i = 0; i < numNormais; i++){
-            int pai1, pai2; //indice dos pais
+            int paiE, paiN; //indice dos pais
             
-            if(elitista){
-                /*Escolhe pais elite apenas*/
-                pai1 = elite[rand() % elite.size()].second;
-                pai2 = elite[rand() % elite.size()].second;
-            }
-            else{
-                /*Escolhe pais quaisquer*/
-                pai1 = rand() % pop.size();
-                pai2 = rand() % pop.size();;
-            }
+            /*Escolhe pais quaisquer*/
+            paiE = indices[rand() % numElite].second; //Pai elite
+            paiN = indices[numElite + rand() % (popTam - numElite)].second; //Pai normal
 
             //Gera o filho
-            crossover(pop[pai1], pop[pai2], popNova[i]);
+            crossover(pop[paiE], pop[paiN], popNova[i]);
         }
 
         /*Mantem a elite na populacao*/
         for(int i = numNormais; i < numNormais + numElite; i++)
-            popNova[i] = pop[elite[i - numNormais].second];
+            popNova[i] = pop[indices[i - numNormais].second];
         
         /*Acrescenta os mutantes*/
         for(int i = numNormais + numElite; i < popTam; i++)
@@ -546,7 +531,7 @@ int main(){
     leitura();
 
     //GRASP_One();
-    BRKGA(100000, 0.2, 0.1, 100);
+    BRKGA(5000, 0.2, 0.1, 100);
     GRASP_One();
     //RKGA(1000, 0.2, 0.1, 100, true);
 }
