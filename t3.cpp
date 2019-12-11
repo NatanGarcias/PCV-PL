@@ -276,10 +276,149 @@ void GRASP_One(){
 	tempoGasto(t);
 }
 
+/*Gera um numero real aleatorio entre min e max (inclusos)*/
+long double fRand(long double min, long double max){
+    long double f = (long double)rand()/RAND_MAX;
+    return min + f * (max - min);
+}
+
+/*Gera um novo individuo e salva suas chaves no vetor ind*/
+void gerarIndividuo(vector<long double> &ind){
+    for(int i = 0; i < ind.size(); i++)
+        ind[i] = fRand(0, 1);
+}
+
+/*Decodifica chaves em solucoes com base no seguinte algoritmo:
+a i-ésima cidade corresponde a posicao i - 1 do vetor de chaves,
+que será ordenado em seguida, ditando assim a ordem das cidades
+também*/
+long double decoder(vector<long double> &ind){
+    vector<pair<long double, int>> cidades(ind.size());
+    
+    for(int i = 0; i < cidades.size(); i++)
+        cidades[i] = make_pair(ind[i], i + 1);
+
+    sort(cidades.begin(), cidades.end());
+
+    /*Construção da rota*/
+    rota[0] = {0, 0}; //A rota sempre comeca do 0
+    for(int i = 0; i < cidades.size(); i++)
+        rota[i + 1] = {cidades[i].second, 0};
+
+    return fObj(rota); //Retorna o resultado da função objetivo
+}
+
+void crossover(vector<long double> &pai1, vector<long double> &pai2, vector<long double> &filho){
+    for(int i = 0; i < filho.size(); i++){
+        int op = rand() % 2; //Opcao de recombinacao do gene
+        
+        if(op == 0)
+            filho[i] = pai1[i];
+        else if(op == 0)
+            filho[i] = pai2[i];
+        else
+            filho[i] = (pai1[i] + pai2[i])/2;
+    }
+}
+
+void RKGA(int popTam, long double pElite, long double pMut, int numIter, bool elitista = false){
+    
+	//Calcular o tempo em milisegundos
+	clock_t t;
+  	t = clock();
+    
+    /*Populacao vetores com chaves aleatorias*/
+    vector<vector<long double>>pop(popTam, vector<long double>(nV - 1));
+    
+    /*Populacao que ira substituir a antiga (esta fora do while para nao ficar 
+    alocando e desalocando sem necessidade)*/
+    vector<vector<long double>>popNova(popTam, vector<long double>(nV - 1));
+    
+    /*Melhor solucao encontrada*/
+    vector<long double> melhorInd;
+    long double melhorFitness = numeric_limits<long double>::infinity();   
+
+    /*Inicializa a populacao*/
+    for(int i = 0; i < popTam; i++)
+        gerarIndividuo(pop[i]);
+
+    int numElite = popTam * pElite;
+    int numMutantes = popTam * pMut;
+    int numNormais = popTam - (numElite + numMutantes);
+
+    while(numIter--){
+
+        /*Guarda os indices do membros elite*/
+        vector<pair<long double, int>> elite;
+
+        /*Avalia os individuos e constroi o conjunto elite*/
+        for(int i = 0; i < popTam; i++){
+            long double fitness = decoder(pop[i]);
+            
+            //Insere no conjunto elite
+            elite.push_back(make_pair(fitness, i));
+            push_heap(elite.begin(), elite.end());
+
+            /*Se o conjunto elite está cheio, remove o pior*/
+            if(elite.size() > numElite){
+                pop_heap(elite.begin(), elite.end());
+                elite.pop_back();
+            }
+
+            /*Atualiza o melhor individuo*/
+            if(fitness < melhorFitness){
+                melhorFitness = fitness;
+                melhorInd = pop[i];
+                numIter++; //Houve melhora na iteração
+            }
+        }
+
+        /*Faz o crossover das solucoes de maneira elitista ou nao,
+        depende do parametro utilizado*/
+        for(int i = 0; i < numNormais; i++){
+            int pai1, pai2; //indice dos pais
+            
+            if(elitista){
+                /*Escolhe pais elite apenas*/
+                pai1 = elite[rand() % elite.size()].second;
+                pai2 = elite[rand() % elite.size()].second;
+            }
+            else{
+                /*Escolhe pais quaisquer*/
+                pai1 = rand() % pop.size();
+                pai2 = rand() % pop.size();;
+            }
+
+            //Gera o filho
+            crossover(pop[pai1], pop[pai2], popNova[i]);
+        }
+
+        /*Mantem a elite na populacao*/
+        for(int i = numNormais; i < numNormais + numElite; i++)
+            popNova[i] = pop[elite[i - numNormais].second];
+        
+        /*Acrescenta os mutantes*/
+        for(int i = numNormais + numElite; i < popTam; i++)
+            gerarIndividuo(popNova[i]);
+
+        pop = popNova; //Sobrescreve a populacao antiga
+        cerr << "Melhor da geracao: " << decoder(melhorInd) << endl;
+    }
+
+    cout << "Melhor Individuo: " << decoder(melhorInd) << endl;
+
+    //Tempo
+	t = clock() - t;
+	tempoGasto(t);
+}
+
+
+
 int main(){
     srand(time(0));  
     
     leitura();
 
-    GRASP_One();
+    //GRASP_One();
+    RKGA(1000, 0.2, 0.1, 100, true);
 }
