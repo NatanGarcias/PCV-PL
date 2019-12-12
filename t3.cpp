@@ -32,7 +32,7 @@ vector<vector<Arco>> adj; //Matriz de adjacencia das cidades
 vector<Passageiro> vp; //Vetor de passageiros
 
 void tempoGasto(clock_t &t){
-	printf ("It took me %d clicks (%f seconds).\n",t,((float)t)/CLOCKS_PER_SEC);
+	printf ("%f seconds\n",((float)t)/CLOCKS_PER_SEC);
 }
 
 void leitura(){
@@ -368,7 +368,7 @@ void crossover(vector<long double> &paiE, vector<long double> &paiN, vector<long
     }
 }
 
-void BRKGA(int popTam, long double pElite, long double pMut, int numIter, bool elitista = false){
+void BRKGA(int popTam, long double pElite, long double pMut, int numIter){
     
 	//Calcular o tempo em milisegundos
 	clock_t t;
@@ -440,14 +440,16 @@ void BRKGA(int popTam, long double pElite, long double pMut, int numIter, bool e
             gerarIndividuo(popNova[i]);
 
         pop = popNova; //Sobrescreve a populacao antiga
-        cerr << "Melhor da geracao: " << decoder(melhorInd) << endl;
+        //cerr << "Melhor da geracao: " << decoder(melhorInd) << endl;
     }
 
-    cout << "Melhor Individuo: " << decoder(melhorInd) << endl;
+    //cout << "Melhor Individuo: " << decoder(melhorInd) << endl;
 
     //Tempo
 	t = clock() - t;
 	tempoGasto(t);
+
+    cerr << decoder(melhorInd) << "\t"; 
 }
 
 //Inicializa a mtriz de pheromone de maneira aleatória
@@ -531,7 +533,11 @@ int main(){
     leitura();
 
     //GRASP_One();
-    BRKGA(5000, 0.2, 0.1, 100);
-    GRASP_One();
-    //RKGA(1000, 0.2, 0.1, 100, true);
+    for(int i = 1000; i <= 5000; i+=4000)
+        for(int j = 10; j <= 25; j += 15)
+            for(int k = 50; k <= 100; k += 50)
+                BRKGA(i, 0.2, j/100.0, k);
+    cout << "\n";
+    cerr << "\n";
+    //GRASP_One();
 }
