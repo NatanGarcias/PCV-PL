@@ -32,7 +32,8 @@ vector<vector<Arco>> adj; //Matriz de adjacencia das cidades
 vector<Passageiro> vp; //Vetor de passageiros
 
 void tempoGasto(clock_t &t){
-	printf ("It took me %d clicks (%f seconds).\n",t,((float)t)/CLOCKS_PER_SEC);
+	printf ("%f\n",((float)t)/CLOCKS_PER_SEC);
+	//printf ("It took me %d clicks (%f seconds).\n",t,((float)t)/CLOCKS_PER_SEC);
 }
 
 void leitura(){
@@ -217,7 +218,7 @@ bool pertuba(vector<Node> &rota){
 
 	//Troco o vertice i com o vertice i+1
 	//Se acho quma solucao melhor retorno esse solucao
-	for(int i=0;i<nV-1;i++){
+	for(int i=1;i<nV-1;i++){
 		swap(rota[i],rota[i+1]);
 
 		long double atualFObj = fObj(rota);
@@ -243,11 +244,11 @@ void BL_GRASP(vector<Node> &rota){
 	while(pertuba(rota));
 }
 
-void GRASP_One(){
+void GRASP(){
 	//Minimiza a distancia entre os vertices 
 	
 	int nIteracoes = nV*100;
-	int tlC = floor(log2(nV));
+	int tlC = 5;//floor(log2(nV));
 
 	//Calcular o tempo em milisegundos
 	clock_t t;
@@ -316,9 +317,10 @@ void GRASP_One(){
 	}
 
 	//Imprimo a melhor solucao
-	cout << "Melhor valor da funcao Objetivo: " << bestFObj << endl;
-	for(auto i : rotaG) cout << i.cidade << " ";
-	cout << endl;
+	cerr << bestFObj << endl;
+	//cout << "Melhor valor da funcao Objetivo: " << bestFObj << endl;
+	//for(auto i : rotaG) cout << i.cidade << " ";
+	//cout << endl;
 	
 	//Imprimo o tempo
 	t = clock() - t;
@@ -530,8 +532,6 @@ int main(){
     
     leitura();
 
-    //GRASP_One();
-    BRKGA(5000, 0.2, 0.1, 100);
-    GRASP_One();
-    //RKGA(1000, 0.2, 0.1, 100, true);
+    //BRKGA(5000, 0.2, 0.1, 100);
+    GRASP();
 }
