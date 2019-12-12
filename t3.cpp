@@ -533,17 +533,6 @@ int main(){
     
     leitura();
 
-<<<<<<< HEAD
-    //GRASP_One();
-    for(int i = 1000; i <= 5000; i+=4000)
-        for(int j = 10; j <= 25; j += 15)
-            for(int k = 50; k <= 100; k += 50)
-                BRKGA(i, 0.2, j/100.0, k);
-    cout << "\n";
-    cerr << "\n";
-    //GRASP_One();
-=======
-    //BRKGA(5000, 0.2, 0.1, 100);
+    BRKGA(5000, 0.2, 0.1, 100);
     GRASP();
->>>>>>> 5bb6f316c0f173f416e6caeb43d85bff3fcee69b
 }
