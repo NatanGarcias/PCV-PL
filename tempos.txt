@@ -1,0 +1,2699 @@
+0.096997 seconds
+0.099697 seconds
+0.069262 seconds
+0.118017 seconds
+0.331947 seconds
+0.603087 seconds
+0.398950 seconds
+0.657688 seconds
+
+0.070108 seconds
+0.141665 seconds
+0.080750 seconds
+0.140513 seconds
+0.357920 seconds
+0.769901 seconds
+0.411094 seconds
+0.785136 seconds
+
+0.065103 seconds
+0.112051 seconds
+0.068112 seconds
+0.123813 seconds
+0.339617 seconds
+0.510580 seconds
+0.422133 seconds
+0.666086 seconds
+
+0.065992 seconds
+0.125926 seconds
+0.096109 seconds
+0.154719 seconds
+0.608508 seconds
+0.579910 seconds
+0.380943 seconds
+0.725448 seconds
+
+0.088844 seconds
+0.128937 seconds
+0.089427 seconds
+0.155055 seconds
+0.393898 seconds
+0.619009 seconds
+0.429665 seconds
+0.874448 seconds
+
+0.090704 seconds
+0.168291 seconds
+0.081499 seconds
+0.178050 seconds
+0.351421 seconds
+0.617263 seconds
+0.416357 seconds
+0.735730 seconds
+
+0.074888 seconds
+0.135189 seconds
+0.073063 seconds
+0.129922 seconds
+0.332881 seconds
+0.583044 seconds
+0.358184 seconds
+0.749197 seconds
+
+0.063546 seconds
+0.125609 seconds
+0.076916 seconds
+0.120569 seconds
+0.295659 seconds
+0.525228 seconds
+0.344285 seconds
+0.609037 seconds
+
+0.055178 seconds
+0.105915 seconds
+0.059524 seconds
+0.114948 seconds
+0.276727 seconds
+0.489263 seconds
+0.299187 seconds
+0.551480 seconds
+
+0.062217 seconds
+0.136385 seconds
+0.072496 seconds
+0.122718 seconds
+0.287343 seconds
+0.496213 seconds
+0.337537 seconds
+0.620220 seconds
+
+0.068493 seconds
+0.127497 seconds
+0.081312 seconds
+0.136604 seconds
+0.339177 seconds
+0.582022 seconds
+0.374785 seconds
+0.655919 seconds
+
+0.064789 seconds
+0.132607 seconds
+0.070512 seconds
+0.138061 seconds
+0.342867 seconds
+0.663683 seconds
+0.362024 seconds
+0.684881 seconds
+
+0.060043 seconds
+0.108221 seconds
+0.072569 seconds
+0.120399 seconds
+0.275583 seconds
+0.498116 seconds
+0.301578 seconds
+0.560886 seconds
+
+0.071867 seconds
+0.123859 seconds
+0.092348 seconds
+0.151467 seconds
+0.357110 seconds
+0.613916 seconds
+0.375501 seconds
+0.707104 seconds
+
+0.075884 seconds
+0.141783 seconds
+0.086514 seconds
+0.141671 seconds
+0.353135 seconds
+0.656217 seconds
+0.381982 seconds
+0.741243 seconds
+
+0.085581 seconds
+0.131201 seconds
+0.076610 seconds
+0.137626 seconds
+0.333905 seconds
+0.567738 seconds
+0.468271 seconds
+0.661172 seconds
+
+0.072276 seconds
+0.130195 seconds
+0.070122 seconds
+0.152954 seconds
+0.339590 seconds
+0.633681 seconds
+0.333333 seconds
+0.633976 seconds
+
+0.070913 seconds
+0.112522 seconds
+0.080706 seconds
+0.135175 seconds
+0.349722 seconds
+0.678781 seconds
+0.415372 seconds
+0.683090 seconds
+
+0.119779 seconds
+0.134037 seconds
+0.071279 seconds
+0.129735 seconds
+0.358566 seconds
+0.591377 seconds
+0.381805 seconds
+0.757392 seconds
+
+0.067281 seconds
+0.133160 seconds
+0.078092 seconds
+0.148091 seconds
+0.388023 seconds
+0.564429 seconds
+0.324506 seconds
+0.613893 seconds
+
+0.070015 seconds
+0.123833 seconds
+0.076715 seconds
+0.115776 seconds
+0.310479 seconds
+0.506347 seconds
+0.317666 seconds
+0.606016 seconds
+
+0.065707 seconds
+0.111397 seconds
+0.064547 seconds
+0.108984 seconds
+0.277278 seconds
+0.486226 seconds
+0.282702 seconds
+0.540958 seconds
+
+0.061758 seconds
+0.125732 seconds
+0.071409 seconds
+0.130605 seconds
+0.301378 seconds
+0.560775 seconds
+0.342785 seconds
+0.650700 seconds
+
+0.057649 seconds
+0.117758 seconds
+0.071012 seconds
+0.122982 seconds
+0.287062 seconds
+0.524383 seconds
+0.330191 seconds
+0.604897 seconds
+
+0.061841 seconds
+0.113496 seconds
+0.062930 seconds
+0.119920 seconds
+0.302129 seconds
+0.536418 seconds
+0.326512 seconds
+0.597300 seconds
+
+0.071951 seconds
+0.112744 seconds
+0.067115 seconds
+0.119902 seconds
+0.337401 seconds
+0.565476 seconds
+0.390369 seconds
+0.630579 seconds
+
+0.059006 seconds
+0.112610 seconds
+0.069934 seconds
+0.119242 seconds
+0.297445 seconds
+0.511939 seconds
+0.329120 seconds
+0.607165 seconds
+
+0.060194 seconds
+0.120233 seconds
+0.112846 seconds
+0.130655 seconds
+0.311161 seconds
+0.516562 seconds
+0.323462 seconds
+0.617806 seconds
+
+0.058661 seconds
+0.111068 seconds
+0.065891 seconds
+0.117627 seconds
+0.295742 seconds
+0.513991 seconds
+0.357696 seconds
+0.639448 seconds
+
+0.098797 seconds
+0.156619 seconds
+0.095772 seconds
+0.135906 seconds
+0.388772 seconds
+0.619288 seconds
+0.402344 seconds
+0.856570 seconds
+
+0.081151 seconds
+0.148843 seconds
+0.085056 seconds
+0.157462 seconds
+0.363621 seconds
+0.676486 seconds
+0.357593 seconds
+0.961883 seconds
+
+0.068538 seconds
+0.120627 seconds
+0.076245 seconds
+0.143173 seconds
+0.450857 seconds
+0.575855 seconds
+0.371336 seconds
+0.663740 seconds
+
+0.073544 seconds
+0.129567 seconds
+0.071463 seconds
+0.135266 seconds
+0.339304 seconds
+0.608816 seconds
+0.372552 seconds
+0.664147 seconds
+
+0.068367 seconds
+0.125654 seconds
+0.077220 seconds
+0.182218 seconds
+0.318960 seconds
+0.601426 seconds
+0.414039 seconds
+0.690448 seconds
+
+0.066338 seconds
+0.127897 seconds
+0.080665 seconds
+0.124340 seconds
+0.320734 seconds
+0.567452 seconds
+0.340352 seconds
+0.656614 seconds
+
+0.065494 seconds
+0.112254 seconds
+0.083416 seconds
+0.190275 seconds
+0.433669 seconds
+0.609462 seconds
+0.374390 seconds
+1.003193 seconds
+
+0.059361 seconds
+0.110980 seconds
+0.070853 seconds
+0.121461 seconds
+0.313515 seconds
+0.533353 seconds
+0.325654 seconds
+0.608307 seconds
+
+0.070269 seconds
+0.125436 seconds
+0.081500 seconds
+0.134795 seconds
+0.340048 seconds
+0.600525 seconds
+0.395991 seconds
+0.679667 seconds
+
+0.069335 seconds
+0.138498 seconds
+0.090980 seconds
+0.141463 seconds
+0.338394 seconds
+0.585723 seconds
+0.356867 seconds
+0.702798 seconds
+
+0.070575 seconds
+0.135502 seconds
+0.076778 seconds
+0.137342 seconds
+0.363339 seconds
+0.624010 seconds
+0.362158 seconds
+0.689697 seconds
+
+0.052680 seconds
+0.097533 seconds
+0.061091 seconds
+0.106958 seconds
+0.273872 seconds
+0.476374 seconds
+0.310407 seconds
+0.542831 seconds
+
+0.104424 seconds
+0.157717 seconds
+0.060298 seconds
+0.158549 seconds
+0.289744 seconds
+0.539881 seconds
+0.413862 seconds
+0.616396 seconds
+
+0.056984 seconds
+0.106308 seconds
+0.070949 seconds
+0.113463 seconds
+0.258170 seconds
+0.509763 seconds
+0.319330 seconds
+0.565671 seconds
+
+0.059443 seconds
+0.109389 seconds
+0.070914 seconds
+0.115359 seconds
+0.265532 seconds
+0.516270 seconds
+0.305806 seconds
+0.632467 seconds
+
+0.067632 seconds
+0.131231 seconds
+0.066136 seconds
+0.121908 seconds
+0.329356 seconds
+0.538308 seconds
+0.386912 seconds
+0.562418 seconds
+
+0.058541 seconds
+0.113480 seconds
+0.066328 seconds
+0.107486 seconds
+0.280961 seconds
+0.486303 seconds
+0.313739 seconds
+0.595304 seconds
+
+0.057059 seconds
+0.104202 seconds
+0.072563 seconds
+0.111771 seconds
+0.263854 seconds
+0.512889 seconds
+0.295654 seconds
+0.568212 seconds
+
+0.052277 seconds
+0.194177 seconds
+0.061607 seconds
+0.108656 seconds
+0.272119 seconds
+0.500575 seconds
+0.314811 seconds
+0.558224 seconds
+
+0.051685 seconds
+0.094578 seconds
+0.087207 seconds
+0.114595 seconds
+0.288220 seconds
+0.460725 seconds
+0.282358 seconds
+0.519163 seconds
+
+0.053347 seconds
+0.100761 seconds
+0.069254 seconds
+0.114072 seconds
+0.281847 seconds
+0.530199 seconds
+0.278699 seconds
+0.992512 seconds
+
+0.059204 seconds
+0.125084 seconds
+0.133847 seconds
+0.183499 seconds
+0.323106 seconds
+0.589815 seconds
+0.355131 seconds
+0.631254 seconds
+
+0.061498 seconds
+0.108683 seconds
+0.066927 seconds
+0.114844 seconds
+0.285438 seconds
+0.500421 seconds
+0.330776 seconds
+0.552482 seconds
+
+0.064041 seconds
+0.117658 seconds
+0.065467 seconds
+0.122605 seconds
+0.336379 seconds
+0.790526 seconds
+0.349032 seconds
+0.647012 seconds
+
+0.056928 seconds
+0.107294 seconds
+0.070948 seconds
+0.114384 seconds
+0.284088 seconds
+0.518142 seconds
+0.360658 seconds
+0.639478 seconds
+
+0.069236 seconds
+0.132032 seconds
+0.079891 seconds
+0.143599 seconds
+0.311221 seconds
+0.602037 seconds
+0.367328 seconds
+0.731607 seconds
+
+0.069124 seconds
+0.118201 seconds
+0.061373 seconds
+0.125914 seconds
+0.295110 seconds
+0.591032 seconds
+0.315624 seconds
+0.668105 seconds
+
+0.055340 seconds
+0.221839 seconds
+0.113098 seconds
+0.180411 seconds
+0.382607 seconds
+0.701723 seconds
+0.435829 seconds
+0.789842 seconds
+
+0.053189 seconds
+0.121512 seconds
+0.070475 seconds
+0.123992 seconds
+0.258264 seconds
+0.472977 seconds
+0.318608 seconds
+0.591678 seconds
+
+0.059146 seconds
+0.118577 seconds
+0.065751 seconds
+0.119038 seconds
+0.288493 seconds
+0.529944 seconds
+0.355415 seconds
+0.592868 seconds
+
+0.061663 seconds
+0.126591 seconds
+0.066400 seconds
+0.118164 seconds
+0.306119 seconds
+0.532361 seconds
+0.330779 seconds
+0.593672 seconds
+
+0.243725 seconds
+0.324693 seconds
+0.295207 seconds
+0.582794 seconds
+1.557208 seconds
+1.814103 seconds
+2.525185 seconds
+2.535597 seconds
+
+0.255538 seconds
+0.488849 seconds
+0.341418 seconds
+0.367919 seconds
+2.212374 seconds
+1.893153 seconds
+1.949480 seconds
+3.143622 seconds
+
+0.265799 seconds
+0.449713 seconds
+0.384099 seconds
+0.948085 seconds
+2.370706 seconds
+1.822349 seconds
+1.889051 seconds
+2.675989 seconds
+
+0.274306 seconds
+0.835856 seconds
+0.385291 seconds
+0.567550 seconds
+1.359192 seconds
+2.219458 seconds
+1.623949 seconds
+2.862525 seconds
+
+0.240888 seconds
+0.345363 seconds
+0.288632 seconds
+0.468753 seconds
+1.393517 seconds
+1.884501 seconds
+1.179217 seconds
+2.237886 seconds
+
+0.227944 seconds
+0.371912 seconds
+0.331647 seconds
+0.635882 seconds
+1.219668 seconds
+2.351824 seconds
+1.475070 seconds
+2.074062 seconds
+
+0.220892 seconds
+0.305126 seconds
+0.362459 seconds
+0.394507 seconds
+1.368815 seconds
+1.942279 seconds
+1.637143 seconds
+2.631350 seconds
+
+0.224761 seconds
+0.292684 seconds
+0.291287 seconds
+0.404706 seconds
+1.846883 seconds
+1.867563 seconds
+1.749416 seconds
+5.411212 seconds
+
+0.245488 seconds
+0.417671 seconds
+0.577954 seconds
+0.526503 seconds
+1.716654 seconds
+1.920101 seconds
+3.010055 seconds
+4.090171 seconds
+
+0.312869 seconds
+0.380545 seconds
+0.409067 seconds
+0.859549 seconds
+1.441272 seconds
+2.644077 seconds
+2.089213 seconds
+3.345254 seconds
+
+0.273809 seconds
+0.505857 seconds
+0.311232 seconds
+0.636617 seconds
+1.390565 seconds
+2.523714 seconds
+1.454061 seconds
+2.537891 seconds
+
+0.299654 seconds
+0.671445 seconds
+0.291857 seconds
+0.730520 seconds
+1.231998 seconds
+2.002628 seconds
+2.151553 seconds
+3.343507 seconds
+
+0.282985 seconds
+0.369553 seconds
+0.324761 seconds
+0.691985 seconds
+1.520352 seconds
+2.235293 seconds
+1.949556 seconds
+3.128409 seconds
+
+0.274755 seconds
+0.397828 seconds
+0.345815 seconds
+0.456951 seconds
+1.564170 seconds
+1.820685 seconds
+1.777199 seconds
+3.035770 seconds
+
+0.278402 seconds
+0.320701 seconds
+0.340342 seconds
+0.497974 seconds
+1.752157 seconds
+2.158367 seconds
+2.480184 seconds
+3.508592 seconds
+
+0.269539 seconds
+0.452931 seconds
+0.469241 seconds
+0.777618 seconds
+1.414281 seconds
+2.041023 seconds
+2.042387 seconds
+3.197993 seconds
+
+0.483760 seconds
+0.415241 seconds
+0.445326 seconds
+0.569093 seconds
+1.306080 seconds
+3.143296 seconds
+2.051854 seconds
+3.711285 seconds
+
+0.346963 seconds
+0.392210 seconds
+0.342577 seconds
+0.465754 seconds
+1.598226 seconds
+2.784900 seconds
+1.575365 seconds
+2.774880 seconds
+
+0.242146 seconds
+0.349247 seconds
+0.335306 seconds
+0.625320 seconds
+1.526772 seconds
+2.698230 seconds
+1.901578 seconds
+2.808289 seconds
+
+0.520717 seconds
+0.376369 seconds
+0.367587 seconds
+0.552628 seconds
+1.823050 seconds
+2.204322 seconds
+2.577542 seconds
+4.410835 seconds
+
+0.285723 seconds
+0.339594 seconds
+0.254429 seconds
+0.649356 seconds
+1.773240 seconds
+2.155627 seconds
+1.542084 seconds
+3.035249 seconds
+
+0.209072 seconds
+0.343908 seconds
+0.271100 seconds
+0.373053 seconds
+1.169132 seconds
+2.324217 seconds
+1.793894 seconds
+2.605594 seconds
+
+0.253291 seconds
+0.406590 seconds
+0.222252 seconds
+0.397587 seconds
+1.053711 seconds
+2.248717 seconds
+1.749279 seconds
+3.052428 seconds
+
+0.249147 seconds
+0.424516 seconds
+0.259645 seconds
+0.385019 seconds
+1.337642 seconds
+2.087306 seconds
+1.488325 seconds
+2.196347 seconds
+
+0.201114 seconds
+0.314307 seconds
+0.282430 seconds
+0.523090 seconds
+1.432861 seconds
+1.776887 seconds
+1.977058 seconds
+1.907256 seconds
+
+0.239297 seconds
+0.336414 seconds
+0.433455 seconds
+0.460754 seconds
+1.206255 seconds
+1.849944 seconds
+1.516875 seconds
+2.000376 seconds
+
+0.222109 seconds
+0.373850 seconds
+0.313479 seconds
+0.456485 seconds
+1.157971 seconds
+1.820577 seconds
+1.511844 seconds
+2.035456 seconds
+
+0.213927 seconds
+0.326203 seconds
+0.248995 seconds
+0.405159 seconds
+1.351350 seconds
+1.682787 seconds
+1.313004 seconds
+3.068378 seconds
+
+0.209712 seconds
+0.465931 seconds
+0.318609 seconds
+0.365017 seconds
+1.140352 seconds
+1.582219 seconds
+1.943815 seconds
+2.210886 seconds
+
+0.254859 seconds
+0.359873 seconds
+0.292252 seconds
+0.480874 seconds
+1.499928 seconds
+1.800208 seconds
+2.044330 seconds
+2.797478 seconds
+
+0.242920 seconds
+0.358537 seconds
+0.285059 seconds
+0.454798 seconds
+1.427119 seconds
+1.713951 seconds
+1.964809 seconds
+2.353350 seconds
+
+0.240764 seconds
+0.334481 seconds
+0.433254 seconds
+0.682108 seconds
+1.498934 seconds
+2.195027 seconds
+1.879791 seconds
+2.665789 seconds
+
+0.303850 seconds
+0.461926 seconds
+0.350669 seconds
+0.878709 seconds
+1.484897 seconds
+1.961868 seconds
+2.129367 seconds
+2.685531 seconds
+
+0.301612 seconds
+0.378398 seconds
+0.401454 seconds
+0.422844 seconds
+1.449767 seconds
+1.877066 seconds
+1.993476 seconds
+3.262444 seconds
+
+0.323225 seconds
+0.414382 seconds
+0.266497 seconds
+0.461066 seconds
+1.451103 seconds
+2.247932 seconds
+2.929230 seconds
+3.166291 seconds
+
+0.278064 seconds
+0.298508 seconds
+0.312100 seconds
+0.851072 seconds
+1.430414 seconds
+2.233625 seconds
+2.203379 seconds
+3.047039 seconds
+
+0.323333 seconds
+0.435690 seconds
+0.321923 seconds
+0.544656 seconds
+1.415612 seconds
+3.126606 seconds
+1.865483 seconds
+3.099531 seconds
+
+0.316550 seconds
+0.587529 seconds
+0.301807 seconds
+0.767296 seconds
+1.938926 seconds
+2.326394 seconds
+2.247311 seconds
+2.584913 seconds
+
+0.267626 seconds
+0.414856 seconds
+0.293115 seconds
+0.718154 seconds
+1.487222 seconds
+4.800481 seconds
+2.736795 seconds
+2.722818 seconds
+
+0.338225 seconds
+0.310181 seconds
+0.303761 seconds
+0.483670 seconds
+1.832378 seconds
+2.255415 seconds
+2.632295 seconds
+3.189969 seconds
+
+0.250316 seconds
+0.439420 seconds
+0.255802 seconds
+0.367842 seconds
+1.158950 seconds
+1.830079 seconds
+1.786729 seconds
+2.060527 seconds
+
+0.212949 seconds
+0.519842 seconds
+0.302036 seconds
+0.528906 seconds
+1.174212 seconds
+1.451586 seconds
+1.304951 seconds
+1.716147 seconds
+
+0.170789 seconds
+0.263241 seconds
+0.240868 seconds
+0.333801 seconds
+1.188751 seconds
+1.842568 seconds
+1.538108 seconds
+2.459680 seconds
+
+0.268976 seconds
+0.445184 seconds
+0.263463 seconds
+0.434728 seconds
+1.353705 seconds
+2.129908 seconds
+1.631303 seconds
+2.053829 seconds
+
+0.178395 seconds
+0.410712 seconds
+0.304380 seconds
+0.340904 seconds
+0.999097 seconds
+2.025240 seconds
+1.478177 seconds
+2.069611 seconds
+
+0.172223 seconds
+0.258247 seconds
+0.481072 seconds
+0.376828 seconds
+1.372655 seconds
+1.827666 seconds
+1.581584 seconds
+2.011251 seconds
+
+0.235032 seconds
+0.374435 seconds
+0.339491 seconds
+0.392406 seconds
+1.179309 seconds
+1.818490 seconds
+1.512139 seconds
+2.761892 seconds
+
+0.216543 seconds
+0.484402 seconds
+0.337047 seconds
+0.325242 seconds
+1.125384 seconds
+1.616790 seconds
+1.921506 seconds
+2.249838 seconds
+
+0.184883 seconds
+0.335940 seconds
+0.329116 seconds
+0.509810 seconds
+1.185681 seconds
+1.859133 seconds
+1.629567 seconds
+2.013595 seconds
+
+0.184770 seconds
+0.643917 seconds
+0.236266 seconds
+0.516285 seconds
+1.331788 seconds
+1.834269 seconds
+1.498321 seconds
+2.927299 seconds
+
+0.298737 seconds
+0.391448 seconds
+0.353609 seconds
+0.759043 seconds
+1.572057 seconds
+2.153745 seconds
+1.886438 seconds
+2.665167 seconds
+
+0.312724 seconds
+0.782923 seconds
+0.261018 seconds
+0.656891 seconds
+1.174079 seconds
+1.650562 seconds
+1.883804 seconds
+2.812553 seconds
+
+0.275340 seconds
+0.406389 seconds
+0.317261 seconds
+0.383170 seconds
+1.268945 seconds
+1.845128 seconds
+1.897651 seconds
+2.878113 seconds
+
+0.241920 seconds
+0.383537 seconds
+0.314158 seconds
+0.410185 seconds
+1.296973 seconds
+1.833920 seconds
+1.737801 seconds
+3.911922 seconds
+
+0.283418 seconds
+0.426989 seconds
+0.282056 seconds
+0.502422 seconds
+1.543209 seconds
+1.795238 seconds
+2.252840 seconds
+4.266549 seconds
+
+0.336886 seconds
+0.349484 seconds
+0.474434 seconds
+0.509331 seconds
+1.538636 seconds
+3.109002 seconds
+2.504283 seconds
+2.508243 seconds
+
+0.320613 seconds
+0.278233 seconds
+0.343978 seconds
+0.554035 seconds
+1.013551 seconds
+2.965537 seconds
+1.995241 seconds
+3.237479 seconds
+
+0.312919 seconds
+0.347312 seconds
+0.298549 seconds
+0.457180 seconds
+1.678068 seconds
+1.962163 seconds
+1.993553 seconds
+2.032186 seconds
+
+0.237609 seconds
+0.336837 seconds
+0.317307 seconds
+0.472492 seconds
+1.526085 seconds
+1.843023 seconds
+1.780764 seconds
+2.596896 seconds
+
+0.266272 seconds
+0.554784 seconds
+0.338918 seconds
+0.680560 seconds
+1.612310 seconds
+1.942342 seconds
+1.610078 seconds
+3.265694 seconds
+
+0.434303 seconds
+0.666729 seconds
+1.217360 seconds
+1.213858 seconds
+2.799901 seconds
+4.612941 seconds
+6.305868 seconds
+8.567040 seconds
+
+0.536563 seconds
+0.946226 seconds
+0.662866 seconds
+1.942702 seconds
+4.235729 seconds
+5.219929 seconds
+4.244858 seconds
+5.301239 seconds
+
+0.472760 seconds
+0.728429 seconds
+0.707569 seconds
+1.230868 seconds
+2.703132 seconds
+5.174108 seconds
+4.488595 seconds
+5.695342 seconds
+
+0.845846 seconds
+0.878752 seconds
+0.792881 seconds
+0.927095 seconds
+2.850602 seconds
+3.886716 seconds
+5.006197 seconds
+5.270047 seconds
+
+0.418242 seconds
+0.813069 seconds
+0.627868 seconds
+1.063719 seconds
+3.044771 seconds
+4.413541 seconds
+5.420681 seconds
+6.628591 seconds
+
+0.786405 seconds
+1.236866 seconds
+0.581958 seconds
+0.792142 seconds
+2.732200 seconds
+4.437388 seconds
+5.830881 seconds
+4.954150 seconds
+
+0.824480 seconds
+0.777386 seconds
+0.645901 seconds
+1.090571 seconds
+2.795959 seconds
+5.823574 seconds
+6.423718 seconds
+9.523654 seconds
+
+0.503870 seconds
+1.078273 seconds
+0.625811 seconds
+1.309231 seconds
+3.474864 seconds
+4.426138 seconds
+4.121125 seconds
+5.912765 seconds
+
+0.584584 seconds
+0.635431 seconds
+0.814409 seconds
+1.062147 seconds
+3.345108 seconds
+3.700026 seconds
+5.193320 seconds
+5.328618 seconds
+
+0.438365 seconds
+0.645176 seconds
+0.959468 seconds
+1.169763 seconds
+3.370241 seconds
+5.867966 seconds
+3.494839 seconds
+5.190226 seconds
+
+0.716252 seconds
+1.409186 seconds
+0.927943 seconds
+1.112841 seconds
+3.285944 seconds
+4.859869 seconds
+4.849564 seconds
+7.683553 seconds
+
+0.897435 seconds
+0.885701 seconds
+1.011731 seconds
+1.248310 seconds
+3.427875 seconds
+4.875293 seconds
+6.393126 seconds
+6.954259 seconds
+
+0.672748 seconds
+1.429731 seconds
+1.619105 seconds
+1.123420 seconds
+4.002366 seconds
+6.450473 seconds
+4.576697 seconds
+7.735142 seconds
+
+0.549939 seconds
+1.333829 seconds
+0.743591 seconds
+0.844393 seconds
+3.247553 seconds
+5.123769 seconds
+5.787411 seconds
+8.120909 seconds
+
+0.722051 seconds
+0.840307 seconds
+0.972788 seconds
+1.027355 seconds
+3.532364 seconds
+5.272646 seconds
+5.286956 seconds
+6.904721 seconds
+
+0.599210 seconds
+0.904047 seconds
+0.802782 seconds
+1.046562 seconds
+4.392238 seconds
+6.282054 seconds
+4.638512 seconds
+6.337942 seconds
+
+0.665658 seconds
+1.182153 seconds
+0.789509 seconds
+1.881597 seconds
+4.152801 seconds
+5.071479 seconds
+5.925159 seconds
+9.437859 seconds
+
+0.535626 seconds
+0.919091 seconds
+0.967298 seconds
+0.989833 seconds
+3.171376 seconds
+4.387310 seconds
+4.460628 seconds
+5.356187 seconds
+
+0.711868 seconds
+0.900520 seconds
+0.641861 seconds
+1.431972 seconds
+4.072115 seconds
+4.609022 seconds
+6.542536 seconds
+8.023392 seconds
+
+0.476074 seconds
+0.761622 seconds
+0.897339 seconds
+1.283420 seconds
+4.410625 seconds
+4.532120 seconds
+7.153401 seconds
+6.449352 seconds
+
+0.414231 seconds
+0.889324 seconds
+0.720818 seconds
+1.005489 seconds
+3.529187 seconds
+2.996804 seconds
+3.177034 seconds
+5.262161 seconds
+
+0.474521 seconds
+1.035590 seconds
+0.607895 seconds
+1.111041 seconds
+3.246045 seconds
+3.859328 seconds
+4.462741 seconds
+5.719809 seconds
+
+0.487887 seconds
+0.968687 seconds
+0.614852 seconds
+1.218380 seconds
+5.346636 seconds
+3.971442 seconds
+6.187502 seconds
+4.760141 seconds
+
+0.581967 seconds
+0.741440 seconds
+0.933447 seconds
+0.705985 seconds
+3.845782 seconds
+4.388728 seconds
+4.545903 seconds
+4.568940 seconds
+
+0.470811 seconds
+1.046757 seconds
+0.783994 seconds
+1.500434 seconds
+2.600782 seconds
+4.693483 seconds
+5.530655 seconds
+5.409045 seconds
+
+0.595895 seconds
+0.634514 seconds
+0.689772 seconds
+1.050294 seconds
+3.496304 seconds
+4.030384 seconds
+4.561637 seconds
+6.734579 seconds
+
+0.667349 seconds
+1.082932 seconds
+0.515308 seconds
+0.842358 seconds
+2.889650 seconds
+3.821852 seconds
+4.407260 seconds
+5.200052 seconds
+
+0.648865 seconds
+0.739432 seconds
+0.856240 seconds
+1.187287 seconds
+3.437984 seconds
+4.377655 seconds
+3.325890 seconds
+5.258594 seconds
+
+0.594427 seconds
+1.255304 seconds
+0.573550 seconds
+0.870375 seconds
+2.846132 seconds
+3.355116 seconds
+4.423430 seconds
+6.979510 seconds
+
+0.589650 seconds
+0.554195 seconds
+0.787242 seconds
+0.963464 seconds
+2.587964 seconds
+5.702815 seconds
+4.820458 seconds
+7.074262 seconds
+
+0.713975 seconds
+0.778453 seconds
+0.646005 seconds
+0.800779 seconds
+3.669808 seconds
+4.867105 seconds
+4.261414 seconds
+5.799388 seconds
+
+0.431862 seconds
+0.660153 seconds
+0.659691 seconds
+1.308677 seconds
+3.793262 seconds
+3.868684 seconds
+5.191376 seconds
+7.077714 seconds
+
+0.513523 seconds
+0.653968 seconds
+0.748158 seconds
+0.785214 seconds
+3.628114 seconds
+5.905166 seconds
+4.968275 seconds
+6.087461 seconds
+
+0.753083 seconds
+0.864296 seconds
+1.026283 seconds
+1.107490 seconds
+3.064746 seconds
+6.253576 seconds
+5.794814 seconds
+8.636890 seconds
+
+0.603592 seconds
+0.932234 seconds
+0.702445 seconds
+1.535916 seconds
+4.197924 seconds
+4.713744 seconds
+5.862887 seconds
+7.732106 seconds
+
+1.059216 seconds
+1.184519 seconds
+1.001793 seconds
+1.779757 seconds
+3.125496 seconds
+5.940814 seconds
+4.368438 seconds
+6.396127 seconds
+
+0.519877 seconds
+0.858944 seconds
+0.834632 seconds
+1.424969 seconds
+3.630237 seconds
+4.264707 seconds
+5.266130 seconds
+5.674637 seconds
+
+0.666756 seconds
+0.635549 seconds
+0.912243 seconds
+1.540510 seconds
+3.320434 seconds
+4.112382 seconds
+4.136028 seconds
+5.312119 seconds
+
+0.879697 seconds
+1.054518 seconds
+1.001532 seconds
+1.234165 seconds
+2.816887 seconds
+3.943945 seconds
+5.348570 seconds
+5.932835 seconds
+
+0.829516 seconds
+1.129770 seconds
+1.193792 seconds
+1.132192 seconds
+3.812213 seconds
+4.244417 seconds
+6.296704 seconds
+5.703296 seconds
+
+0.586781 seconds
+0.756223 seconds
+0.715814 seconds
+0.923186 seconds
+2.379118 seconds
+4.884145 seconds
+3.419905 seconds
+5.466674 seconds
+
+0.477694 seconds
+0.806014 seconds
+0.614488 seconds
+0.901161 seconds
+3.150288 seconds
+4.240082 seconds
+4.571693 seconds
+4.538266 seconds
+
+0.569853 seconds
+0.742749 seconds
+0.645880 seconds
+1.067534 seconds
+2.145145 seconds
+3.284929 seconds
+2.847048 seconds
+5.254019 seconds
+
+0.827056 seconds
+0.622925 seconds
+0.925802 seconds
+1.390404 seconds
+3.200694 seconds
+3.251374 seconds
+4.555186 seconds
+7.614835 seconds
+
+0.460229 seconds
+0.586758 seconds
+0.655101 seconds
+1.215751 seconds
+2.415556 seconds
+3.566310 seconds
+2.928441 seconds
+4.848956 seconds
+
+0.356249 seconds
+0.533790 seconds
+0.788356 seconds
+1.267625 seconds
+2.335505 seconds
+2.785691 seconds
+3.675939 seconds
+4.845617 seconds
+
+0.300874 seconds
+0.978072 seconds
+0.492940 seconds
+0.817269 seconds
+2.421946 seconds
+2.643761 seconds
+3.978733 seconds
+5.180010 seconds
+
+0.431764 seconds
+0.491412 seconds
+0.863419 seconds
+0.804496 seconds
+2.367147 seconds
+3.728476 seconds
+4.041470 seconds
+4.704210 seconds
+
+0.416029 seconds
+0.583531 seconds
+0.719174 seconds
+1.039485 seconds
+2.712484 seconds
+2.877101 seconds
+3.403780 seconds
+3.908920 seconds
+
+0.467471 seconds
+0.617836 seconds
+0.589421 seconds
+0.894016 seconds
+2.541098 seconds
+2.769052 seconds
+3.404975 seconds
+5.184900 seconds
+
+0.594246 seconds
+0.865257 seconds
+0.474889 seconds
+1.010889 seconds
+3.332763 seconds
+3.534827 seconds
+4.710988 seconds
+6.401578 seconds
+
+0.534672 seconds
+0.537694 seconds
+0.673545 seconds
+1.129147 seconds
+2.904184 seconds
+3.546737 seconds
+4.326297 seconds
+7.321318 seconds
+
+0.417124 seconds
+1.004163 seconds
+0.525085 seconds
+1.141317 seconds
+3.481459 seconds
+3.600711 seconds
+4.159511 seconds
+5.717346 seconds
+
+0.392254 seconds
+1.047275 seconds
+0.769063 seconds
+1.029474 seconds
+3.274369 seconds
+4.295848 seconds
+5.672407 seconds
+5.680939 seconds
+
+0.464747 seconds
+1.068616 seconds
+0.731559 seconds
+0.828116 seconds
+2.830611 seconds
+3.314972 seconds
+4.089008 seconds
+6.405203 seconds
+
+0.441552 seconds
+0.505725 seconds
+0.693013 seconds
+0.938659 seconds
+2.782997 seconds
+3.719525 seconds
+4.095736 seconds
+6.597127 seconds
+
+0.426166 seconds
+0.666579 seconds
+0.538224 seconds
+1.127307 seconds
+2.870081 seconds
+3.596526 seconds
+4.212748 seconds
+5.337947 seconds
+
+0.549392 seconds
+0.796422 seconds
+0.910668 seconds
+0.871482 seconds
+2.731063 seconds
+3.634236 seconds
+5.239816 seconds
+4.848267 seconds
+
+0.731492 seconds
+0.896547 seconds
+0.648297 seconds
+0.890347 seconds
+3.433514 seconds
+3.515586 seconds
+4.905341 seconds
+4.889110 seconds
+
+0.530063 seconds
+0.721752 seconds
+0.826552 seconds
+1.441124 seconds
+2.817802 seconds
+3.444193 seconds
+6.122988 seconds
+4.872488 seconds
+
+0.830721 seconds
+1.488699 seconds
+1.437083 seconds
+1.843544 seconds
+5.306599 seconds
+9.052961 seconds
+7.658082 seconds
+18.316690 seconds
+
+1.268657 seconds
+1.273657 seconds
+1.157816 seconds
+1.687240 seconds
+6.211150 seconds
+9.211417 seconds
+8.041788 seconds
+13.387172 seconds
+
+1.003403 seconds
+1.761487 seconds
+2.447423 seconds
+1.962871 seconds
+5.584235 seconds
+11.900947 seconds
+7.229484 seconds
+12.832434 seconds
+
+1.007205 seconds
+3.360260 seconds
+1.369024 seconds
+1.967721 seconds
+8.393458 seconds
+6.382270 seconds
+10.425512 seconds
+15.121485 seconds
+
+0.954045 seconds
+1.375929 seconds
+1.283068 seconds
+1.406411 seconds
+5.672569 seconds
+5.987435 seconds
+7.531739 seconds
+14.066502 seconds
+
+1.203051 seconds
+1.498095 seconds
+1.903244 seconds
+1.827137 seconds
+5.343075 seconds
+7.162542 seconds
+8.049921 seconds
+11.989914 seconds
+
+0.969953 seconds
+1.295547 seconds
+1.420273 seconds
+1.393863 seconds
+7.531611 seconds
+7.463027 seconds
+11.884637 seconds
+9.320131 seconds
+
+0.807255 seconds
+1.658766 seconds
+1.643187 seconds
+2.836693 seconds
+6.827905 seconds
+6.967804 seconds
+7.229273 seconds
+10.796549 seconds
+
+1.350750 seconds
+2.519213 seconds
+1.825978 seconds
+1.653819 seconds
+5.732308 seconds
+7.888969 seconds
+6.715295 seconds
+9.834879 seconds
+
+1.338953 seconds
+1.090497 seconds
+1.011455 seconds
+2.282560 seconds
+6.355641 seconds
+5.746836 seconds
+10.776981 seconds
+11.517953 seconds
+
+1.340134 seconds
+2.303218 seconds
+1.718097 seconds
+2.712003 seconds
+7.592924 seconds
+8.017989 seconds
+8.710208 seconds
+11.803648 seconds
+
+1.146568 seconds
+1.536469 seconds
+2.431199 seconds
+2.922133 seconds
+9.481610 seconds
+8.213048 seconds
+10.296135 seconds
+14.120658 seconds
+
+1.203355 seconds
+1.708954 seconds
+2.154954 seconds
+2.038361 seconds
+8.138269 seconds
+9.062672 seconds
+8.885895 seconds
+13.753308 seconds
+
+1.244036 seconds
+1.562897 seconds
+1.316243 seconds
+2.298979 seconds
+6.599020 seconds
+7.965444 seconds
+9.231673 seconds
+15.776823 seconds
+
+1.480188 seconds
+2.115305 seconds
+1.820201 seconds
+1.789353 seconds
+7.476121 seconds
+8.582463 seconds
+16.106096 seconds
+10.235119 seconds
+
+1.446782 seconds
+1.184453 seconds
+1.793711 seconds
+2.069348 seconds
+6.343881 seconds
+7.628043 seconds
+11.844885 seconds
+10.167107 seconds
+
+1.000161 seconds
+2.267159 seconds
+1.457737 seconds
+1.577757 seconds
+7.687781 seconds
+10.663429 seconds
+11.298183 seconds
+12.669268 seconds
+
+1.161572 seconds
+1.270916 seconds
+1.933959 seconds
+1.754943 seconds
+6.699613 seconds
+9.941151 seconds
+10.960903 seconds
+10.720171 seconds
+
+1.894537 seconds
+1.260333 seconds
+1.239849 seconds
+1.957111 seconds
+6.474591 seconds
+8.002702 seconds
+11.871691 seconds
+11.131523 seconds
+
+1.529476 seconds
+2.116175 seconds
+1.336475 seconds
+1.880407 seconds
+7.619883 seconds
+8.208386 seconds
+10.941949 seconds
+12.870105 seconds
+
+1.108494 seconds
+0.886979 seconds
+1.234238 seconds
+1.591188 seconds
+4.463097 seconds
+6.296016 seconds
+7.849052 seconds
+8.574464 seconds
+
+0.940479 seconds
+1.038219 seconds
+1.043783 seconds
+2.809274 seconds
+4.862523 seconds
+6.701462 seconds
+8.825649 seconds
+8.659131 seconds
+
+0.872046 seconds
+0.955130 seconds
+1.114631 seconds
+1.598579 seconds
+4.884175 seconds
+5.872302 seconds
+7.298638 seconds
+8.635127 seconds
+
+0.843747 seconds
+1.518720 seconds
+1.228171 seconds
+1.360097 seconds
+6.192829 seconds
+6.297775 seconds
+6.959043 seconds
+10.177928 seconds
+
+1.337305 seconds
+1.205260 seconds
+1.317381 seconds
+1.831857 seconds
+5.540523 seconds
+6.826919 seconds
+9.158465 seconds
+10.401527 seconds
+
+1.075300 seconds
+1.098112 seconds
+1.835974 seconds
+1.825328 seconds
+7.180941 seconds
+6.834038 seconds
+7.606692 seconds
+9.656054 seconds
+
+0.565058 seconds
+1.249929 seconds
+1.231129 seconds
+1.726437 seconds
+4.673483 seconds
+7.268593 seconds
+7.655429 seconds
+9.307235 seconds
+
+0.781359 seconds
+1.014219 seconds
+1.187656 seconds
+1.975061 seconds
+4.519661 seconds
+5.496667 seconds
+8.118414 seconds
+9.392076 seconds
+
+1.204883 seconds
+1.249677 seconds
+1.284963 seconds
+2.096209 seconds
+5.460437 seconds
+5.519971 seconds
+8.493657 seconds
+10.766189 seconds
+
+0.854108 seconds
+1.900937 seconds
+1.658588 seconds
+1.784576 seconds
+5.494172 seconds
+7.411275 seconds
+9.167418 seconds
+9.211250 seconds
+
+1.099091 seconds
+1.642866 seconds
+1.630964 seconds
+1.961076 seconds
+5.664014 seconds
+9.414686 seconds
+11.693315 seconds
+13.055594 seconds
+
+0.877379 seconds
+1.670162 seconds
+2.691269 seconds
+1.627220 seconds
+7.539648 seconds
+7.269004 seconds
+10.643114 seconds
+10.910564 seconds
+
+1.266746 seconds
+1.266931 seconds
+1.703189 seconds
+2.187207 seconds
+6.456982 seconds
+6.660177 seconds
+7.712552 seconds
+9.497434 seconds
+
+1.252933 seconds
+1.306679 seconds
+1.882659 seconds
+1.466389 seconds
+4.937121 seconds
+8.154806 seconds
+9.201199 seconds
+9.612281 seconds
+
+1.532814 seconds
+2.231480 seconds
+1.274017 seconds
+1.693401 seconds
+5.798937 seconds
+7.457899 seconds
+7.701695 seconds
+15.506431 seconds
+
+1.007040 seconds
+2.178496 seconds
+1.559602 seconds
+2.449259 seconds
+7.974926 seconds
+7.309171 seconds
+9.412651 seconds
+10.900875 seconds
+
+0.963608 seconds
+2.038179 seconds
+1.530362 seconds
+2.149151 seconds
+5.597316 seconds
+9.961435 seconds
+10.019066 seconds
+10.624137 seconds
+
+1.327001 seconds
+1.888102 seconds
+1.253913 seconds
+1.597940 seconds
+5.681342 seconds
+7.303403 seconds
+10.556242 seconds
+11.372254 seconds
+
+1.419404 seconds
+2.354546 seconds
+1.186205 seconds
+1.902123 seconds
+7.813281 seconds
+8.889997 seconds
+9.365485 seconds
+11.991620 seconds
+
+1.345961 seconds
+2.203399 seconds
+1.406187 seconds
+2.111563 seconds
+7.150788 seconds
+8.700607 seconds
+8.603453 seconds
+11.241222 seconds
+
+0.937019 seconds
+1.060610 seconds
+1.077418 seconds
+1.284576 seconds
+4.054533 seconds
+5.585685 seconds
+6.366400 seconds
+8.514518 seconds
+
+0.721669 seconds
+1.034366 seconds
+0.907417 seconds
+1.282746 seconds
+4.158466 seconds
+4.530333 seconds
+6.841341 seconds
+7.040290 seconds
+
+0.568000 seconds
+1.538086 seconds
+1.220091 seconds
+1.742528 seconds
+3.965008 seconds
+6.229932 seconds
+6.580199 seconds
+12.095280 seconds
+
+0.969958 seconds
+1.580115 seconds
+1.465816 seconds
+1.464954 seconds
+4.685411 seconds
+6.439151 seconds
+7.450639 seconds
+8.595093 seconds
+
+0.756833 seconds
+1.678019 seconds
+1.263879 seconds
+1.427090 seconds
+4.415277 seconds
+7.245906 seconds
+5.935129 seconds
+8.428603 seconds
+
+1.614843 seconds
+0.933301 seconds
+0.960422 seconds
+1.526413 seconds
+4.299024 seconds
+4.776917 seconds
+7.173081 seconds
+7.158387 seconds
+
+0.933254 seconds
+0.672175 seconds
+0.948195 seconds
+1.939467 seconds
+4.723060 seconds
+4.871372 seconds
+6.318644 seconds
+9.208455 seconds
+
+1.420955 seconds
+1.276495 seconds
+1.059890 seconds
+2.066843 seconds
+3.905477 seconds
+15.309492 seconds
+6.865722 seconds
+7.882218 seconds
+
+0.798484 seconds
+1.324061 seconds
+0.850300 seconds
+1.791053 seconds
+3.983595 seconds
+5.279980 seconds
+7.141692 seconds
+8.167448 seconds
+
+1.285848 seconds
+0.884763 seconds
+1.482003 seconds
+2.548053 seconds
+4.097486 seconds
+6.492907 seconds
+7.326664 seconds
+7.842877 seconds
+
+0.865744 seconds
+0.978852 seconds
+0.965526 seconds
+2.777868 seconds
+3.939545 seconds
+7.254248 seconds
+6.882108 seconds
+9.421121 seconds
+
+0.635013 seconds
+1.056771 seconds
+1.150046 seconds
+1.270730 seconds
+5.129261 seconds
+7.307369 seconds
+9.710574 seconds
+9.567470 seconds
+
+0.990360 seconds
+1.450150 seconds
+1.342381 seconds
+1.419821 seconds
+5.286275 seconds
+7.512080 seconds
+7.817216 seconds
+11.171166 seconds
+
+0.678151 seconds
+1.226294 seconds
+1.343529 seconds
+4.381323 seconds
+6.677039 seconds
+6.164594 seconds
+8.849354 seconds
+7.981938 seconds
+
+1.089967 seconds
+0.797618 seconds
+0.936291 seconds
+2.208847 seconds
+4.205713 seconds
+6.063339 seconds
+7.257264 seconds
+8.975555 seconds
+
+0.710483 seconds
+1.325618 seconds
+0.934568 seconds
+0.990154 seconds
+4.536772 seconds
+5.872758 seconds
+9.215194 seconds
+7.940267 seconds
+
+0.785295 seconds
+1.224510 seconds
+1.482201 seconds
+2.900551 seconds
+4.950468 seconds
+4.810347 seconds
+8.613036 seconds
+9.067449 seconds
+
+1.011659 seconds
+1.463511 seconds
+1.463175 seconds
+3.299826 seconds
+5.045339 seconds
+5.584464 seconds
+6.204649 seconds
+8.360809 seconds
+
+0.900136 seconds
+1.405922 seconds
+1.136566 seconds
+1.791372 seconds
+4.166814 seconds
+6.253550 seconds
+6.865189 seconds
+10.112875 seconds
+
+1.093449 seconds
+0.973127 seconds
+1.140238 seconds
+1.194758 seconds
+5.452593 seconds
+6.861640 seconds
+10.358562 seconds
+8.042021 seconds
+
+1.594371 seconds
+1.456510 seconds
+1.856324 seconds
+3.335544 seconds
+10.190357 seconds
+9.428228 seconds
+6.467158 seconds
+15.426530 seconds
+
+1.350091 seconds
+2.187199 seconds
+5.096661 seconds
+2.955015 seconds
+7.813294 seconds
+9.898982 seconds
+16.697296 seconds
+17.045095 seconds
+
+1.079474 seconds
+1.910258 seconds
+1.815673 seconds
+2.574888 seconds
+8.316739 seconds
+9.913221 seconds
+13.387984 seconds
+25.758564 seconds
+
+2.182659 seconds
+1.769668 seconds
+3.672485 seconds
+3.594335 seconds
+9.202551 seconds
+16.702085 seconds
+11.251960 seconds
+13.741177 seconds
+
+1.775157 seconds
+2.300623 seconds
+2.611969 seconds
+4.031651 seconds
+10.178623 seconds
+10.677880 seconds
+17.489252 seconds
+18.962223 seconds
+
+1.600888 seconds
+3.280516 seconds
+2.758124 seconds
+3.760990 seconds
+9.080026 seconds
+9.225051 seconds
+13.417410 seconds
+16.823788 seconds
+
+2.211818 seconds
+2.164682 seconds
+2.516003 seconds
+1.908263 seconds
+8.352261 seconds
+10.640421 seconds
+11.362467 seconds
+15.075091 seconds
+
+1.337162 seconds
+2.022877 seconds
+2.226391 seconds
+3.304521 seconds
+8.694847 seconds
+10.947378 seconds
+14.837053 seconds
+17.995228 seconds
+
+1.230100 seconds
+2.655492 seconds
+2.518463 seconds
+3.749260 seconds
+9.148168 seconds
+10.909936 seconds
+15.590044 seconds
+18.272720 seconds
+
+1.474921 seconds
+2.114082 seconds
+2.289213 seconds
+2.300775 seconds
+8.807729 seconds
+12.830630 seconds
+10.751510 seconds
+17.873217 seconds
+
+1.411173 seconds
+2.495315 seconds
+2.660167 seconds
+4.875410 seconds
+10.289353 seconds
+12.195520 seconds
+16.678946 seconds
+17.619509 seconds
+
+1.701465 seconds
+2.389348 seconds
+2.291039 seconds
+3.946712 seconds
+9.325301 seconds
+15.973645 seconds
+17.987968 seconds
+19.935459 seconds
+
+1.715831 seconds
+1.946172 seconds
+2.651286 seconds
+4.601921 seconds
+14.165937 seconds
+11.529439 seconds
+14.282062 seconds
+16.864122 seconds
+
+1.665891 seconds
+3.026069 seconds
+2.454428 seconds
+3.807068 seconds
+11.885167 seconds
+10.720802 seconds
+16.297216 seconds
+26.466637 seconds
+
+1.791086 seconds
+2.600114 seconds
+2.640892 seconds
+2.533040 seconds
+10.072133 seconds
+14.030128 seconds
+15.981576 seconds
+22.114599 seconds
+
+2.174251 seconds
+4.356622 seconds
+3.412139 seconds
+6.410342 seconds
+13.298742 seconds
+13.825603 seconds
+18.029791 seconds
+19.923460 seconds
+
+2.655088 seconds
+3.161489 seconds
+2.783065 seconds
+3.281658 seconds
+8.787115 seconds
+21.300407 seconds
+19.219275 seconds
+19.784172 seconds
+
+2.462410 seconds
+2.525527 seconds
+3.002150 seconds
+5.319155 seconds
+9.300341 seconds
+17.064981 seconds
+16.334045 seconds
+18.952848 seconds
+
+1.922931 seconds
+4.604159 seconds
+2.669684 seconds
+3.268465 seconds
+10.000607 seconds
+10.465491 seconds
+13.447204 seconds
+20.120096 seconds
+
+1.959766 seconds
+2.813269 seconds
+2.263677 seconds
+3.473923 seconds
+10.747083 seconds
+12.442323 seconds
+22.066462 seconds
+26.659758 seconds
+
+1.173569 seconds
+1.823363 seconds
+2.150366 seconds
+2.821489 seconds
+7.621943 seconds
+10.381393 seconds
+15.392632 seconds
+17.400110 seconds
+
+1.021506 seconds
+3.103408 seconds
+2.034366 seconds
+2.787047 seconds
+7.138410 seconds
+10.408273 seconds
+12.052568 seconds
+16.373714 seconds
+
+2.478109 seconds
+1.762369 seconds
+2.879352 seconds
+4.459963 seconds
+6.571620 seconds
+9.108722 seconds
+10.842691 seconds
+15.539810 seconds
+
+1.409007 seconds
+2.291197 seconds
+1.758983 seconds
+3.618090 seconds
+8.385218 seconds
+9.802283 seconds
+12.492219 seconds
+13.922630 seconds
+
+2.085610 seconds
+1.228015 seconds
+1.639292 seconds
+2.722454 seconds
+9.208034 seconds
+13.225220 seconds
+14.009795 seconds
+12.063181 seconds
+
+1.724428 seconds
+2.527726 seconds
+2.696154 seconds
+3.282302 seconds
+9.424333 seconds
+9.647813 seconds
+12.058561 seconds
+18.625929 seconds
+
+1.909066 seconds
+2.913979 seconds
+2.385873 seconds
+3.007790 seconds
+8.771077 seconds
+11.646812 seconds
+13.036571 seconds
+15.968158 seconds
+
+1.097254 seconds
+2.254426 seconds
+2.076822 seconds
+3.123704 seconds
+10.575606 seconds
+13.086493 seconds
+12.536508 seconds
+20.231688 seconds
+
+1.358485 seconds
+1.948168 seconds
+3.187107 seconds
+3.904397 seconds
+6.394671 seconds
+11.908910 seconds
+12.554006 seconds
+15.782673 seconds
+
+1.437356 seconds
+2.192900 seconds
+1.925715 seconds
+3.132973 seconds
+6.819771 seconds
+11.995880 seconds
+10.371501 seconds
+12.907513 seconds
+
+1.621094 seconds
+2.773858 seconds
+1.867104 seconds
+4.669089 seconds
+8.712600 seconds
+8.653679 seconds
+12.142329 seconds
+15.650912 seconds
+
+1.761740 seconds
+3.384746 seconds
+2.749957 seconds
+5.054084 seconds
+7.427265 seconds
+11.019493 seconds
+12.391753 seconds
+12.566865 seconds
+
+1.750534 seconds
+1.656653 seconds
+2.602667 seconds
+2.802087 seconds
+7.721343 seconds
+9.957237 seconds
+9.949362 seconds
+22.926613 seconds
+
+2.022089 seconds
+2.023278 seconds
+2.214023 seconds
+4.250216 seconds
+9.817701 seconds
+10.302159 seconds
+11.038478 seconds
+12.862344 seconds
+
+2.003713 seconds
+1.580866 seconds
+2.231574 seconds
+3.399439 seconds
+12.735480 seconds
+8.877907 seconds
+21.377775 seconds
+21.554453 seconds
+
+2.247954 seconds
+3.650926 seconds
+3.430885 seconds
+3.857624 seconds
+10.949555 seconds
+10.165738 seconds
+17.892029 seconds
+28.921137 seconds
+
+2.319785 seconds
+2.906028 seconds
+2.493087 seconds
+2.782944 seconds
+7.006609 seconds
+10.155902 seconds
+19.037325 seconds
+17.316223 seconds
+
+1.416821 seconds
+3.151638 seconds
+2.092459 seconds
+2.433902 seconds
+10.002462 seconds
+10.605920 seconds
+13.378033 seconds
+16.166649 seconds
+
+1.963250 seconds
+1.819090 seconds
+3.149791 seconds
+3.187092 seconds
+8.447042 seconds
+10.717305 seconds
+12.391587 seconds
+15.407761 seconds
+
+1.468026 seconds
+2.712641 seconds
+3.519543 seconds
+4.960474 seconds
+10.969380 seconds
+10.780009 seconds
+5.463492 seconds
+16.852060 seconds
+
+1.071693 seconds
+2.680654 seconds
+1.828897 seconds
+2.579946 seconds
+7.267444 seconds
+11.643233 seconds
+12.622072 seconds
+10.175913 seconds
+
+1.533633 seconds
+1.752685 seconds
+2.662295 seconds
+2.345540 seconds
+9.000613 seconds
+10.499018 seconds
+10.194426 seconds
+11.464607 seconds
+
+1.298779 seconds
+1.627108 seconds
+1.382231 seconds
+2.123077 seconds
+12.164670 seconds
+10.843449 seconds
+9.928929 seconds
+14.638701 seconds
+
+1.149468 seconds
+1.382009 seconds
+2.426665 seconds
+1.918902 seconds
+8.350452 seconds
+7.488116 seconds
+9.885705 seconds
+13.588742 seconds
+
+1.507679 seconds
+2.146180 seconds
+1.966433 seconds
+2.581397 seconds
+6.866208 seconds
+11.537592 seconds
+8.645429 seconds
+15.570188 seconds
+
+1.102800 seconds
+3.017467 seconds
+2.044948 seconds
+2.007839 seconds
+7.331255 seconds
+7.577509 seconds
+11.629775 seconds
+11.993596 seconds
+
+1.227408 seconds
+1.349882 seconds
+2.523503 seconds
+2.305467 seconds
+7.415991 seconds
+7.260432 seconds
+10.802144 seconds
+12.585931 seconds
+
+1.797716 seconds
+1.668687 seconds
+1.935537 seconds
+2.351258 seconds
+8.545564 seconds
+8.254005 seconds
+8.851816 seconds
+10.524114 seconds
+
+0.897796 seconds
+1.745415 seconds
+1.891603 seconds
+2.880780 seconds
+5.873827 seconds
+10.197899 seconds
+9.318730 seconds
+13.594163 seconds
+
+1.368732 seconds
+2.535083 seconds
+2.162400 seconds
+3.761164 seconds
+7.554753 seconds
+14.747694 seconds
+10.853188 seconds
+12.659145 seconds
+
+1.856411 seconds
+1.839683 seconds
+1.948232 seconds
+3.413343 seconds
+8.310230 seconds
+10.251593 seconds
+9.884009 seconds
+12.690068 seconds
+
+1.353066 seconds
+2.304657 seconds
+2.397739 seconds
+3.864481 seconds
+6.699705 seconds
+10.673211 seconds
+12.395065 seconds
+18.811581 seconds
+
+0.999469 seconds
+3.121160 seconds
+1.698468 seconds
+5.058807 seconds
+8.049515 seconds
+7.358879 seconds
+11.859696 seconds
+11.366028 seconds
+
+1.680131 seconds
+2.154808 seconds
+3.002077 seconds
+3.278918 seconds
+6.651042 seconds
+8.175706 seconds
+13.066620 seconds
+18.676544 seconds
+
+1.400854 seconds
+1.889237 seconds
+3.607306 seconds
+2.824158 seconds
+9.417468 seconds
+9.845944 seconds
+10.702849 seconds
+13.345637 seconds
+
+1.589700 seconds
+1.496445 seconds
+1.990868 seconds
+2.325185 seconds
+9.670043 seconds
+11.329903 seconds
+17.022741 seconds
+14.324732 seconds
+
+1.402597 seconds
+2.365733 seconds
+2.415583 seconds
+3.851113 seconds
+7.315035 seconds
+12.486273 seconds
+13.086481 seconds
+15.485756 seconds
+
+1.121023 seconds
+1.981301 seconds
+2.327496 seconds
+2.057796 seconds
+7.078777 seconds
+9.606366 seconds
+11.857359 seconds
+17.167669 seconds
+
+1.697671 seconds
+1.199915 seconds
+1.922115 seconds
+2.536392 seconds
+8.545053 seconds
+8.224610 seconds
+15.796161 seconds
+11.185159 seconds
+
+1.503725 seconds
+4.075702 seconds
+1.488094 seconds
+2.588435 seconds
+8.430676 seconds
+11.851975 seconds
+12.674293 seconds
+13.221681 seconds
