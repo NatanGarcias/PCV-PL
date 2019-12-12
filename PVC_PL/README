@@ -1,0 +1,12 @@
+Instruções de compilação e execução:
+
+para compilar:
+
+    g++ t3.cpp -O3 -o nome_do_executavel
+
+para executar:
+
+    ./nome_do_executavel op < arquivo_de_entrada
+
+    se op = g, sera executada a GRASP
+    se op = b, sera executado o BRKGA

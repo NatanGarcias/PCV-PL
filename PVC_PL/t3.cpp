@@ -7,18 +7,16 @@ int C; //Capacidade do carro
 int Q; //Numero de pedagios
 
 struct Arco{
-    Arco(): dist(0), desc(0), visitado(false){}
+    Arco(): dist(0), desc(0){}
     int dist;
     long double desc;
-    bool visitado;
 };
 
 struct Passageiro{
-    Passageiro() : tarifaMax(0), chegada(-1), saida(-1), recebeuCarona(false){}
+    Passageiro() : tarifaMax(0), chegada(-1), saida(-1){}
     long double tarifaMax;
     int saida;
     int chegada;
-    bool recebeuCarona;
 };
 
 struct Node{
@@ -27,12 +25,13 @@ struct Node{
     int numP;
 };
 
-vector<Node>rota; //Rota utilizada na solucao
+vector<Node>rotaG; //Rota utilizada na solucao (global)
 vector<vector<Arco>> adj; //Matriz de adjacencia das cidades
 vector<Passageiro> vp; //Vetor de passageiros
 
+//Funcao de contar tempo
 void tempoGasto(clock_t &t){
-	printf ("It took me %d clicks (%f seconds).\n",t,((float)t)/CLOCKS_PER_SEC);
+	printf ("It took me %d clocks (%f seconds).\n",t,((float)t)/CLOCKS_PER_SEC);
 }
 
 void leitura(){
@@ -47,11 +46,8 @@ void leitura(){
     
     vp.resize(nP);
     
-    rota.resize(nV);
+    rotaG.resize(nV);
     
-    for(int i = 0; i < rota.size(); i++)
-        rota[i] = {i, 0};
-
     /*Le os pedagios*/
     for(int i = 0; i < Q; i++){
         long double desc;
@@ -70,6 +66,7 @@ void leitura(){
         cin >> vp[i].tarifaMax >> vp[i].saida >> vp[i].chegada;
 }
 
+/*Checa se pode existir alguma forma de levar o passageiro nessa rota sem estourar o limite da tarifa*/
 bool tarifaMinima(vector<Node> &rota, vector<bool> &marcado, int indiceRota, int indicePassageiro){
     
     long double total = 0.0;
@@ -79,12 +76,15 @@ bool tarifaMinima(vector<Node> &rota, vector<bool> &marcado, int indiceRota, int
         int cidadeAtual = rota[i].cidade;
         int cidadeProxima = rota[i + 1].cidade;
         
+        //Os descontos sempre sao ativados
         total += adj[cidadeAtual][cidadeProxima].dist;
         total -= adj[cidadeAtual][cidadeProxima].dist * adj[cidadeAtual][cidadeProxima].desc;
     }
 
+    //Divide sempre pelo maximo, pois assume melhor caso
     total /= C + 1;
 
+    //Se o melhor caso nao for suficiente, marca o passageiro
     if(total > vp[indicePassageiro].tarifaMax){
         marcado[indicePassageiro] = true;
         return false;
@@ -93,6 +93,7 @@ bool tarifaMinima(vector<Node> &rota, vector<bool> &marcado, int indiceRota, int
     return true;
 }
 
+/*Calcula a tarifa paga por um passageiro*/
 long double calculaTarifa(vector<Node> &rota, int indicePassageiro, int indiceRota){
     
     long double total = 0.0;
@@ -103,31 +104,35 @@ long double calculaTarifa(vector<Node> &rota, int indicePassageiro, int indiceRo
         int cidadeProxima = rota[i + 1].cidade;
         
         long double atual = adj[cidadeAtual][cidadeProxima].dist;
+        
+        //Checa se atingiu a lotacao
         if(rota[i].numP == C)
             atual -= adj[cidadeAtual][cidadeProxima].dist * adj[cidadeAtual][cidadeProxima].desc;
     
-        total += atual/(rota[i].numP + 1);
+        total += atual/(rota[i].numP + 1); //Divide a divida entre os passageiros e o motorista
     }
 
     return total;
 }
 
+/*Dada uma rota, faz a alocacao e calcula o valor da funcao objetivo*/
 long double fObj(vector<Node> &rota){
     
     /*Heuristica de Carregamento*/
     bool valido = false;
-    vector<bool> marcado(nP, false);
-    vector<pair<int, int>> passageiros;
+    vector<bool> marcado(nP, false); //Passageiros marcados não podem ser alocados
+    vector<pair<int, int>> passageiros; //Guarda o indice o passageiro a posicao dele na rota
 
     while(!valido){
         
         int numPassageiros = 0;
         
-        vector<bool> visitado(nV, false);
-        vector<int> desce(nP, 0);
+        vector<bool> visitado(nV, false); //Cidades visitadas
+        vector<int> desce(nP, 0); //Numero de pessoas que descem na cidade
         
-        passageiros.clear();
+        passageiros.clear(); //Reinicia o vetor de passageiros alocados
 
+        //Inicia o numero de passageiros em cada ponto da rota
         for(int i=0;i<rota.size();i++)
             rota[i].numP = 0;
 
@@ -146,32 +151,25 @@ long double fObj(vector<Node> &rota){
                 desce[vp[cidade].chegada]++;
             }
 
-            rota[i].numP = numPassageiros;
-            visitado[cidade] = true;
+            rota[i].numP = numPassageiros; //Passageiros naquele ponto da rota
+            visitado[cidade] = true; //Visita a cidade
         }
 
-        vector<long double>tarifas(nP, 0.0);
-
-        long double maiorExcesso = 0.0;
-        int maiorPassageiro = -1;
+        long double maiorExcesso = 0.0; //Maior estouro de limite de tarifa
+        int maiorPassageiro = -1; //Indice do passageiro que mais estorou o limite
 
         for(int i = 0; i < passageiros.size(); i++){
             long double tarifaTotal = calculaTarifa(rota, passageiros[i].first, passageiros[i].second);
-            //cerr << "T: " << passageiros[i].first << " " << tarifaTotal << endl;
+            
+            /*Atualiza o maior excesso*/
             if(maiorExcesso < tarifaTotal - vp[passageiros[i].first].tarifaMax){
                 maiorExcesso = tarifaTotal - vp[passageiros[i].first].tarifaMax;
                 maiorPassageiro = passageiros[i].first;
             }
         }
 
-        // for(int i=0;i<passageiros.size();i++){
-        //     cout << passageiros[i].first << " ";
-        // }cout << endl;
-
-        if(maiorPassageiro != -1){
-            //cout << maiorPassageiro << endl;
-            marcado[maiorPassageiro] = true;
-        }
+        if(maiorPassageiro != -1)
+            marcado[maiorPassageiro] = true; //Marca o pior passageiro
         else
             valido = true;
     }
@@ -184,26 +182,13 @@ long double fObj(vector<Node> &rota){
         int cidadeProxima = rota[i + 1].cidade;
         
         long double atual = adj[cidadeAtual][cidadeProxima].dist;
+        
+        //Checa se atingiu a lotacao
         if(rota[i].numP == C)
             atual -= adj[cidadeAtual][cidadeProxima].dist * adj[cidadeAtual][cidadeProxima].desc;
     
-        total += atual/(rota[i].numP + 1);
-
-        //cout << cidadeAtual << " " << cidadeProxima << " " << adj[cidadeAtual][cidadeProxima].dist << " " << adj[cidadeAtual][cidadeProxima].dist/(rota[i].numP + 1) << " " << total << endl;
-
+        total += atual/(rota[i].numP + 1); //Divide os custos entre motorista e passageiros
     }
-
-    // for(int i=0;i<rota.size();i++){
-    //     cout << rota[i].cidade << " ";
-    // }cout << endl;
-
-    // for(int i=0;i<rota.size();i++){
-    //     cout << rota[i].numP << " ";
-    // }cout << endl;
-
-    // for(int i=0;i<passageiros.size();i++){
-    //     cout << passageiros[i].first << " ";
-    // }cout << endl;
 
     return total + adj[0][rota.back().cidade].dist; //Somando o custo de volta para a cidade inicial
 }
@@ -250,9 +235,6 @@ void GRASP(int nIteracoes, int tlC){
 	clock_t t;
   	t = clock();
  	
- 	//Guarda a melhor rota até então encontrada
- 	vector<Node> rotaG;
-
 	long double bestFObj = std::numeric_limits<long double>::max();
 
 	while(nIteracoes--){
@@ -347,17 +329,18 @@ long double decoder(vector<long double> &ind){
     sort(cidades.begin(), cidades.end());
 
     /*Construção da rota*/
-    rota[0] = {0, 0}; //A rota sempre comeca do 0
+    rotaG[0] = {0, 0}; //A rota sempre comeca do 0
     for(int i = 0; i < cidades.size(); i++)
-        rota[i + 1] = {cidades[i].second, 0};
+        rotaG[i + 1] = {cidades[i].second, 0};
 
-    return fObj(rota); //Retorna o resultado da função objetivo
+    return fObj(rotaG); //Retorna o resultado da função objetivo
 }
 
 void crossover(vector<long double> &paiE, vector<long double> &paiN, vector<long double> &filho){
     for(int i = 0; i < filho.size(); i++){
         int op = rand() % 100; //Opcao de recombinacao do gene
         
+        //Tem uma chance nao honesta de optar pelo gene do pai elite
         if(op < 75)
             filho[i] = paiE[i];
         else
@@ -437,21 +420,32 @@ void BRKGA(int popTam, long double pElite, long double pMut, int numIter, bool e
             gerarIndividuo(popNova[i]);
 
         pop = popNova; //Sobrescreve a populacao antiga
-        cerr << "Melhor da geracao: " << decoder(melhorInd) << endl;
+        
+        /*Caso queira debugar*/
+        #ifdef debug
+            cerr << "Melhor da geracao: " << decoder(melhorInd) << endl;
+        #endif
     }
 
     cout << "Melhor Individuo: " << decoder(melhorInd) << endl;
+    for(auto i : rotaG) cout << i.cidade << " ";
+	cout << endl;
 
     //Tempo
 	t = clock() - t;
 	tempoGasto(t);
 }
 
-int main(){
+int main(int argc, char **argv){
     srand(time(0));  
     
     leitura();
 
-    BRKGA(5000, 0.2, 0.1, 100);
-    GRASP_One(nV*100,3);
+    if(argv[1][0] == 'g')
+        GRASP(nV * 100, 3);
+    else if(argv[1][0] == 'b')
+        BRKGA(5000, 0.2, 0.1, 100);
+    else
+        cerr << "Opcao Invalida!!!\n";
+    return 0;
 }
